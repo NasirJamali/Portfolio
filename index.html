@@ -14,7 +14,9 @@
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -52,13 +54,14 @@
 
     <div class="container">
       <div class="hero-content">
-        <h1>I'm <span class="typed" data-typed-items="Nasir Hussain, a Web Developer, "></span></h1>
-        <p>Email: Nasirjamali789@gmail.com</p>
+        <h1 class="fontChange">I'm <span class="typed" data-typed-items="Nasir Hussain, a Web Developer, "></span></h1>
+        <p>Turn concepts into web realities</p>
     
         <ul class="list-unstyled list-social">
-           <li><a href="https://www.facebook.com/nasirhussain888"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/"><i class="bi bi-linkedin"></i></a></li>
+          <li><a target="_blank" href="https://github.com/NasirJamali"><i class="bi bi-github"></i></a></li>
+          <li><a target="_blank" href="https://www.facebook.com/nasirhussain888"><i class="bi bi-facebook"></i></a></li>
+          <li><a target="_blank" href="https://www.instagram.com/nasirhere_"><i class="bi bi-instagram"></i></a></li>
           
           
         </ul>
@@ -76,19 +79,20 @@
           <div class="col-lg-4 ">
             <div class="div-img-bg">
               <div class="about-img">
-                <img src="assets/img/pic2.png" class="img-responsive" alt="me">
+                <img src="assets/img/about.jpeg" class="img-responsive" alt="me">
               </div>
             </div>
           </div>
 
           <div class="col-lg-7">
-            <div class="about-descr">
+            <div class="about-descr" class="content">
+              <p class="p-heading">Hi, I'm Nasir Hussain</p>
+              <p class="separator">"I'm a Full-Stack Web Developer with over 3 years of experience. During this time, I've successfully taken numerous web projects from ideas to fully polished creations. My goal is to make the web a better place through my skills and dedication."</p>
+        
+                <br>
+                 <button class="read-more-button" onclick="toggleHiddenContent()"><i class="fas fa-chevron-down"></i></button>
+                 <div id="hidden-content" style="display: none;">
 
-              <p class="p-heading">Hi.! i am Nasir Hussain..</p>
-              <p class="separator">i am a Full-Stack Web Developer with more than 3 years of experience. 
-                I have successfully completed several web projects from Start to finish in my 3 year of experience with Web development..</p>
-                
-                 <p> As a Developer i use following technologies , tools and Programming Languages..</p>
                  <p>⚡ Front-End Development :
                 <br>💠 | • Html | • Css | • JS | • JS Vanilla |</p>
                  
@@ -101,31 +105,17 @@
                  <p>⚡ DataBase :
                 <br>💠 | • MongoDb | • Mongoose | </p>
                 
+             
                 
-                 <p>⚡Few Responsive websites types that i have created for clients..
-                
-              <br>   🌟E-commerce Website 
-              <br>   🌟Tesla Clone Website
-              <br>   🌟Blog Website
-              <br>   🌟Portofolio Website 
-              <br>   🌟Delivery Website 
-              <br>   🌟GYM Website 
-              <br>   🌟Real State Website 
-              <br>   🌟Travel Agency Websites
-              <br>   🌟Chat Web-App
-              <br>   🌟Food Website 
-              <br>   🌟Webs without Frameworks
-              <br>   🌟Landing Pages
-              <br>   🌟And Many More...</p>
-                
-                    <br> I have created large number of Websites throughout my industry experience,
-                 <br>with my Passion and Knowledge i can make best Website for you in proper ways...
-                 <br>
-              <br> <strong> Don't hesitate to share your ideas.! </strong>
-                  <br>
-                   <strong><br>  Regards: Nasir Hussain </strong>
+                    <br> Throughout my journey, I've crafted numerous websites. With my passion 
+                    and expertise, I have the ability to create exceptional websites that stand out. Your ideas are
+                     important – I'm here to bring them to life in the best possible way. 
+                 
+                    <br>
+                   <strong><br>Regards,</strong>
+                   <strong><br>Nasir Hussain</strong>
                   </p>
-
+                </div>
             </div>
 
           </div>
@@ -144,7 +134,7 @@
               <div class="services-block">
                 <i class="bi bi-briefcase"></i>
                 <span>FRONT-END DEVELOPMENT</span>
-                <p class="separator"> i will use | Html | Css | Js | React | Bootstrap | for Front-End </p>
+                <p class="separator"> "I create beautiful websites using HTML, CSS, JavaScript, React, and Bootstrap" </p>
               </div>
             </div><!-- End testimonial item -->
 
@@ -152,7 +142,7 @@
               <div class="services-block">
                 <i class="bi bi-card-checklist"></i>
                 <span>BACK-END DEVELOPMENT</span>
-                <p class="separator">i will use JS | Node Js | Express | for Back-End Development </p>
+                <p class="separator">"In back-end development, I'm armed with Node.js & and Express" </p>
               </div>
             </div><!-- End testimonial item -->
 
@@ -160,7 +150,7 @@
               <div class="services-block">
                 <i class="bi bi-bar-chart"></i>
                 <span>DATABASE DEVELOPMENT</span>
-                <p class="separator">I will use MongoDb | Mongoose | for DataBase Development</p>
+                <p class="separator">"In the world of databases, I choose MongoDb & Mongoose"</p>
               </div>
             </div><!-- End testimonial item -->
 
@@ -168,21 +158,17 @@
               <div class="services-block">
                 <i class="bi bi-calendar4-week"></i>
                 <span>UPGRADING YOUR WEBSITE</span>
-                <p class="separator">Lets Bring Some New Features to Your Website..!</p>
+                <p class="separator">"Let's sprinkle some magic on your website with exciting new features!"</p>
               </div>
             </div><!-- End testimonial item -->
-
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
-
     </div><!-- End Services Section -->
 
     <!-- ======= Journal Section ======= -->
     <div id="journal" class="text-left paddsection">
-
       <div class="container">
         <div class="section-title text-center">
           <h2>My Recent Work</h2>
@@ -196,12 +182,12 @@
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
 
-                <a href="blog-single.html"><img src="assets/img/tesla.jpg" a class="img-responsive" alt="img"></a>
+                <a href="blog-single.html"><iframe width="356" height="237" src="https://www.youtube.com/embed/vOuRZuVR30M?si=QabBy8KuhmxRyoN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
 
                 <div class="journal-txt">
 
-                  <h4><a href="blog-single.html">TESLA CLONE WEBSITE .!<br>(Click & Play Website Video)</a></h4>
-                  <p class="separator">Made With HTML | CSS | JS | no Front-End FrameWork Used </p>
+                  <h4><a href="blog-single.html">TESLA CLONE WEBSITE</a></h4>
+                  <p class="separator">Crafted using HTML, CSS, and JavaScript, no front-end frameworks required </p>
                  <p><a href="blog-single.html"><strong>Read More...</strong></a></p> 
                  
 
@@ -213,12 +199,12 @@
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
 
-                <a href="blog-single 2.html"><img src="assets/img/PORTFOLIO1.png" class="img-responsive" alt="img"></a>
+                <a href="blog-single 2.html"><iframe width="356" height="237" src="https://www.youtube.com/embed/ICDOiPI26hY?si=rqiEI33Xd0-bUBj9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
 
                 <div class="journal-txt">
 
-                  <h4><a href="blog-single 2.html">FULLY RESPONSIVE PORTFOLIO.!<br>(Click & Play Website Video)</a></h4>
-                  <p class="separator">Made With HTML | CSS | JS | also Bootstrap FrameWork has been used.!  </p>
+                  <h4><a href="blog-single 2.html">TRAVEL AGENCY WEBSITE</a></h4>
+                  <p class="separator">Made with the magic of HTML, CSS, JavaScript & Bootstrap  </p>
                   <p><a href="blog-single 2.html"><strong>Read More...</strong></a></p> 
 
                 </div>
@@ -229,13 +215,13 @@
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
 
-                <a href="blog-single 3.html"><img src="assets/img/aboutbg1.jpg" class="img-responsive" alt="img"></a>
+                <a href="blog-single 3.html"><iframe width="356" height="237" src="https://www.youtube.com/embed/lCCWs1DIQSM?si=XUWzIaD4OBYs0BmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
 
                 <div class="journal-txt">
 
-                  <h4><a href="blog-single 3.html">Mobile Friendly GYM WEBSITE .!<br>(Click & Play Website Video)</a></h4>
-                  <p class="separator">Made With Pure HTML | CSS | JS | Node/Express | no Front-End FrameWork Used </p>
-                  <p><a href="blog-single.html"><strong>Read More...</strong></a></p> 
+                  <h4><a href="blog-single 3.html">OTT MOVIES WEBSITE</a></h4>
+                  <p class="separator">Made With Pure HTML, CSS, and JavaScript, alongside the power of Node.js and Express </p>
+                  <p><a href="blog-single 3.html"><strong>Read More...</strong></a></p> 
 
                 </div>
 
@@ -255,14 +241,15 @@
       <div class="socials-media text-center">
 
         <ul class="list-unstyled">
-          <li><a href="https://www.facebook.com/nasirhussain888"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/"><i class="bi bi-linkedin"></i>
+            <li><a target="_blank" href="https://github.com/NasirJamali"><i class="bi bi-github"></i></a></li>
+            <li><a target="_blank" href="https://www.facebook.com/nasirhussain888"><i class="bi bi-facebook"></i></a></li>
+            <li><a target="_blank" href="https://www.instagram.com/nasirhere_"><i class="bi bi-instagram"></i></a></li>
         </ul>
 
       </div>
 
-      <p>&copy; Copyrights by Nasir Jamali. All rights reserved.</p>
+      <p>&copy; Copyrights by nasirhere678@gmail.com</p>
      
     </div>
   </div><!-- End Footer -->
@@ -281,6 +268,26 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+  function toggleHiddenContent() {
+    var hiddenContent = document.getElementById('hidden-content');
+    var readMoreButton = document.querySelector('.read-more-button');
+  
+    if (hiddenContent.style.display === 'none') {
+      hiddenContent.style.display = 'block';
+      readMoreButton.textContent = 'As a Developer i use following technologies';
+    } else {
+      hiddenContent.style.display = 'none';
+      readMoreButton.textContent = 'Read More';
+    }
+  }
+  </script>
+  
+  
+  
+  
+  
+  
 
   
 
