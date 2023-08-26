@@ -15,17 +15,23 @@ body {
 }
 
 
+
+/* .container A iframe{
+  width: 459px;
+  height: 306px;
+} */
+
+
+
 body h1{
-  text-shadow: rgb(20, 122, 255) 10px 0 23px;
+  text-shadow: rgb(48, 47, 47) 10px 0 23px;
 }
 
 body p{
   font-family: 'Acme', sans-serif;
-  text-shadow: rgb(58, 58, 58) 1px 0 18px;
+  text-shadow: rgb(82, 81, 81) 1px 0 18px;
   /* font-family: 'Gluten', cursive; */
 }
-
-
 
 
 .read-more-button {
@@ -615,7 +621,7 @@ p {
   margin-top: 0px;
   margin-left: 0px;
   /* height: 460px; */
-  height: 330px;
+  /* height: 330px; */
   border-radius: 9px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -1153,7 +1159,7 @@ blockquote {
 #footer .socials-media ul li a {
   font-size: 24px;
   color: #068FFF;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.3em;
   font-weight: 500;
   background: transparent;
   text-transform: uppercase;
@@ -1286,11 +1292,11 @@ blockquote {
     padding: 20px 15px;
   }
 
-  .container A iframe{
+  /* .container A iframe{
     width: 459px;
     height: 306px;
   }
-  
+   */
 
   .nav-menu {
     margin-top: 40px;
@@ -1331,7 +1337,7 @@ blockquote {
     margin-top: 0px;
     margin-left: 0px;
     /* height: 460px; */
-    height: 481px;
+    height: 100%;
     border-radius: 37px;
     -o-object-fit: cover;
     object-fit: cover;
@@ -1382,6 +1388,11 @@ blockquote {
     padding: 20px 15px;
   }
 
+  /* .container A iframe{
+    width: 380px;
+    height: 250px;
+  } */
+
   .nav-menu {
     margin-top: 40px;
     display: none;
@@ -1417,8 +1428,10 @@ blockquote {
 
   #about .div-img-bg .about-img img {
     margin-top: 0%;
+    width: 100%;
+    height: 100%;
     margin-left: calc(0% - 0px);
-  }
+}
 
   #about .about-descr .p-heading {
     font-size: 20px;
@@ -1465,6 +1478,11 @@ blockquote {
     padding: 20px 15px;
   }
 
+  /* .container A iframe{
+    width: 100%;
+    height: auto;
+  } */
+
   .nav-menu {
     margin-top: 40px;
     display: none;
@@ -1500,6 +1518,8 @@ blockquote {
 
   #about .div-img-bg .about-img img {
     margin-top: 0%;
+    width: 100%;
+    height: 100%;
     margin-left: calc(0% - 0px);
   }
 
@@ -1547,6 +1567,12 @@ blockquote {
     padding: 20px 15px;
   }
 
+  /* .container A iframe{
+    width: 100%;
+    height: 100%;
+  } */
+  
+
   .nav-menu {
     margin-top: 40px;
     display: none;
@@ -1582,6 +1608,8 @@ blockquote {
 
   #about .div-img-bg .about-img img {
     margin-top: 0%;
+    width: 100%;
+    height: 100%;
     margin-left: calc(0% - 0px);
   }
 
