@@ -70,9 +70,14 @@ h4 {
 }
 
 a {
-  color: #292929;
+  color: #211f1f;
   text-decoration: none !important;
   transition: all 0.5s ease-in-out 0s;
+}
+
+
+.back-button:hover{
+  color: #36a30b;
 }
 
 a:hover {
@@ -525,12 +530,24 @@ p {
 .hero-content .list-social li {
   float: left;
   margin-right: 20px;
+  font-size: 19px;
 }
 
 .hero-content .list-social li i {
-  color: #fff;
-  font-size: 15px;
+  color:#EBF4F6;
+ 
 }
+
+
+.hero-content .list-social li i:hover {
+  color: #80C4E9;
+ 
+}
+
+
+.far{
+  font-size: 21px;
+ }
 
 /*--------------------------------------------------------------
 # Breadcrumbs
