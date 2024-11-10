@@ -682,10 +682,17 @@ p {
   line-height: 22px;
 }
 
+.services-block {
+  text-align: center;
+}
+
 .services-block i {
   font-size: 44px;
   color:  #068FFF;
   line-height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .services-slider .swiper-pagination {
