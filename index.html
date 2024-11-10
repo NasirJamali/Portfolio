@@ -84,7 +84,7 @@
          
         </ul>
         <ul>
-           <li><a class="nav-link  scrollto" href="https://nasirjamali.github.io/contact-form/">Message me!</a></li>
+           <li><a class="nav-link  scrollto" href="#get-in-touch">Message me!</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -105,7 +105,7 @@
           <li><a target="_blank" href="https://github.com/NasirJamali"><i class="bi bi-github"></i></a></li>
           <!-- <li><a target="_blank" href="https://www.facebook.com/nasirhussain888"><i class="bi bi-facebook"></i></a></li> -->
           <li><a target="_blank" href="https://www.instagram.com/nasiryouknow"><i class="bi bi-instagram"></i></a></li>
-          <li><a target="_blank" href="https://nasirjamali.github.io/contact-form/"><i class="fas fa-comment-alt"></i></a></li>
+          <li><a href="#get-in-touch"><i class="fas fa-comment-alt"></i></a></li>
           
         </ul>
         
@@ -147,7 +147,7 @@
                 <br>💠 | • PHP | • Node Js | • Express Js | </p>
                 
                  <p>⚡ DataBase :
-                <br>💠 | • mySQL | • MongoDb | </p>
+                <br>💠 | • MySQL | • MongoDb | </p>
                 
              
                 
@@ -167,19 +167,34 @@
       </div>
     </div><!-- End About Section -->
 
-    <!-- <style>
-      .services-block {
-  text-align: center;
+    <style>
+      /* Add shadow to each slide */
+/* Add shadow to each slide */
+.swiper-slide .services-block {
+  background-color: #f7f2f2;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adjust the values to control shadow intensity and spread */
+  border-radius: 8px; /* Optional: Adds a subtle rounding of corners */
+  padding: 20px; /* Optional: Adds space inside each block for a better look */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover effect */
 }
 
-.services-block i {
-  font-size: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto 10px; 
+.swiper-slide .services-block:hover {
+  transform: scale(1.05); /* Grows slightly on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow on hover */
 }
-    </style> -->
+.btn-primary {
+    background-color: #0da6e5;
+   
+}
+
+.btn-primary:hover {
+    background-color: #406a94;
+    color: #f0f0f0;
+    transform: scale(1.05); /* Grows slightly on hover */
+  box-shadow: 0px 6px 20px rgba(107, 107, 107, 0.8); /* Adds a stronger shadow on hover */
+}
+
+    </style>
 
     <!-- ======= Services Section ======= -->
     <div id="services">
@@ -192,7 +207,7 @@
               <div class="services-block">
                 <i class="fas fa-desktop"></i>
                 <span>FRONT-END DEVELOPMENT</span>
-                <p class="separator"> "I create beautiful websites using HTML, CSS, JavaScript, React and Bootstrap" </p>
+                <p class="separator"> "I create beautiful websites using HTML, CSS, JavaScript & Bootstrap" </p>
               </div>
             </div><!-- End testimonial item -->
 
@@ -208,7 +223,7 @@
               <div class="services-block">
                 <i class="fas fa-server"></i>
                 <span>DATABASE DEVELOPMENT</span>
-                <p class="separator">"In the world of databases, I choose mySQl"</p>
+                <p class="separator">"In the world of databases, I choose MySQl and MongoDB"</p>
               </div>
             </div><!-- End testimonial item -->
 
@@ -301,7 +316,61 @@
       </div>
 
     </div><!-- End Journal Section -->
+<!-- ======= Contact Form Section ======= -->
+<section id="get-in-touch">
+<div class="container py-5">
+  <h1 class="h1 text-center mb-4 text-primary">GET IN TOUCH</h1>
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+      <div class="form-container shadow-sm p-4 bg-light">
+        <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="e5284c8b-48a8-46e0-b8a5-f6880ad11616">
+
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div><!-- End Contact Form Section -->
+</section>
+<style>
+
+
+  /* Add a box with a light black shadow around the form */
+  .form-container {
+    background-color: white; /* White background for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light black shadow */
+  }
+
+  .form-container:hover{
+   
+    transform: scale(1.01); /* Grows slightly on hover */
+ 
+}
+  
+</style>
+
+  
   </main><!-- End #main -->
+  
 
   <!-- ======= Footer ======= -->
   <div id="footer" class="text-center">
@@ -313,7 +382,7 @@
             <li><a target="_blank" href="https://github.com/NasirJamali"><i class="bi bi-github"></i></a></li>
             <!-- <li><a target="_blank" href="https://www.facebook.com/nasirhussain888"><i class="bi bi-facebook"></i></a></li> -->
             <li><a target="_blank" href="https://www.instagram.com/nasiryouknow"><i class="bi bi-instagram"></i></a></li>
-            <li> <a href="https://nasirjamali.github.io/contact-form/"><i class="fas fa-comment-alt"></i></a></li>
+            <li> <a href="#get-in-touch"><i  class="fas fa-comment-alt"></i></a></li>
           </ul>
 
       </div>
