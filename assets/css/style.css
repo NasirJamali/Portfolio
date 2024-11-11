@@ -1424,13 +1424,14 @@ blockquote {
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
 @media (max-width: 600px) {
-.hero-content h1 {
-    font-size: 30px;
-    font-weight: 700;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    color: #fff;
-    padding-top: 500px;
+    .hero-content h1 {
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        color: #fff;
+        padding-top: 390px;
+    }
 }
   /* Navbar */
   nav {
