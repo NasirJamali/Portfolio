@@ -599,7 +599,7 @@ p {
 @media (max-width: 768px) {
   .hero-content h1 {
  
-    padding-top: 382px;
+    padding-top: 502px;
 }
   .breadcrumbs .d-flex {
     display: block !important;
@@ -1326,7 +1326,7 @@ blockquote {
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #fff;
-    padding-top: 382px;
+    padding-top: 500px;
 }
   /* Navbar */
   nav {
@@ -1429,7 +1429,7 @@ blockquote {
     margin-bottom: 10px;
     text-transform: uppercase;
     color: #fff;
-    padding-top: 382px;
+    padding-top: 500px;
 }
   /* Navbar */
   nav {
