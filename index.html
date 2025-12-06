@@ -1,606 +1,1201 @@
+I'll help you modernize your portfolio! Let me create a completely revamped version with modern design principles, improved performance, better mobile responsiveness, and SEO optimization for nasirweb.online.
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <title>Nasir's Portfolio</title>
+  <title>Nasir Hussain - Full-Stack Web Developer | Professional Portfolio</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Nasir Hussain's portfolio showcasing web development expertise in front-end, back-end, and database technologies. Professional web development projects and skills.">
-  <meta name="keywords" content="Nasir Hussain, web developer, portfolio, front-end development, back-end development, HTML, CSS, JavaScript, Node.js, MongoDB">
-  <link rel="canonical" href="https://nasirweb.site">
-  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <meta name="description" content="Nasir Hussain - Expert Full-Stack Web Developer specializing in modern web applications. 5+ years experience in React, Node.js, MongoDB, and responsive design. Based in Hyderabad.">
+  <meta name="keywords" content="Nasir Hussain, Full-Stack Developer, Web Developer Hyderabad, React Developer, Node.js Developer, MongoDB Expert, Frontend Developer, Backend Developer, nasirweb.online">
+  <meta name="author" content="Nasir Hussain">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://nasirweb.online">
 
-  <!-- Open Graph Meta Tags (For Social Media Sharing) -->
-  <meta property="og:title" content="Nasir Hussain's Portfolio">
-  <meta property="og:description" content="Explore the professional portfolio of Nasir Hussain, a skilled web developer with expertise in both front-end and back-end development.">
-  <meta property="og:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
-  <meta property="og:url" content="https://nasirweb.site">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Nasir Hussain - Full-Stack Web Developer Portfolio">
+  <meta property="og:description" content="Professional web developer with 5+ years experience creating modern, responsive websites and applications.">
+  <meta property="og:image" content="https://nasirweb.online/assets/img/logo1.png">
+  <meta property="og:url" content="https://nasirweb.online">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Nasir Hussain Portfolio">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nasir Hussain's Portfolio">
-  <meta name="twitter:description" content="Discover the web development projects and skills of Nasir Hussain, a full-stack developer specializing in responsive and engaging websites.">
-  <meta name="twitter:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
+  <meta name="twitter:title" content="Nasir Hussain - Full-Stack Web Developer">
+  <meta name="twitter:description" content="Expert web developer specializing in modern full-stack applications with React, Node.js, and MongoDB.">
+  <meta name="twitter:image" content="https://nasirweb.online/assets/img/logo1.png">
   
-  <!-- Schema.org Markup for Person -->
+  <!-- Schema.org Markup -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Nasir Hussain",
     "jobTitle": "Full-Stack Web Developer",
-    "url": "https://nasirweb.site",
+    "url": "https://nasirweb.online",
+    "image": "https://nasirweb.online/assets/img/about.jpeg",
+    "description": "Full-Stack Web Developer with 5+ years of experience in modern web technologies",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Hyderabad",
+      "addressCountry": "PK"
+    },
     "sameAs": [
       "https://www.linkedin.com/in/nasirhussaindev/",
       "https://github.com/NasirJamali",
-      "https://www.instagram.com/nasiryouknow"
+      "https://www.instagram.com/nasiryouknow",
+      "https://www.fiverr.com/s/7Y5ZjD4"
     ],
     "worksFor": {
       "@type": "Organization",
       "name": "Freelance"
-    }
+    },
+    "knowsAbout": ["HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", "Bootstrap", "Tailwind CSS", "PHP", "MySQL"]
   }
   </script>
-  
-
 
   <!-- Favicons -->
-  <link href="assets/img/logo1.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link rel="icon" type="image/png" href="assets/img/logo1.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+  <!-- Preconnect to External Resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Google Fonts - Optimized Loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5.3 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #0ea5e9;
+      --primary-dark: #0284c7;
+      --secondary-color: #8b5cf6;
+      --accent-color: #10b981;
+      --text-primary: #1e293b;
+      --text-secondary: #64748b;
+      --bg-light: #f8fafc;
+      --bg-white: #ffffff;
+      --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+      --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+      --border-radius: 12px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--text-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+      background-color: var(--bg-white);
+    }
+
+    /* ===== NAVBAR ===== */
+    .navbar {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-sm);
+      padding: 1rem 0;
+      transition: var(--transition);
+    }
+
+    .navbar.scrolled {
+      box-shadow: var(--shadow-md);
+      padding: 0.5rem 0;
+    }
+
+    .navbar-brand {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .navbar-brand img {
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+
+    .nav-link {
+      color: var(--text-primary);
+      font-weight: 500;
+      padding: 0.5rem 1rem !important;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: var(--primary-color);
+      transition: var(--transition);
+      transform: translateX(-50%);
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--primary-color);
+    }
+
+    .nav-link:hover::after,
+    .nav-link.active::after {
+      width: 80%;
+    }
+
+    .btn-contact {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      padding: 0.6rem 1.5rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: var(--transition);
+      border: none;
+    }
+
+    .btn-contact:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      color: white;
+    }
+
+    /* ===== HERO SECTION ===== */
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+      overflow: hidden;
+      padding-top: 80px;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="100" height="100" patternUnits="userSpaceOnUse"><path d="M 100 0 L 0 0 0 100" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grid)"/></svg>');
+      opacity: 0.3;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: white;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      margin-bottom: 1rem;
+      line-height: 1.2;
+    }
+
+    .hero .typed-cursor {
+      font-weight: 800;
+      color: var(--accent-color);
+    }
+
+    .hero p {
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      margin-bottom: 2rem;
+      opacity: 0.95;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .social-link {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.3rem;
+      transition: var(--transition);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .social-link:hover {
+      background: white;
+      color: var(--primary-color);
+      transform: translateY(-5px) scale(1.1);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .social-link img {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      filter: brightness(0) invert(1);
+    }
+
+    .social-link:hover img {
+      filter: none;
+    }
+
+    /* ===== ABOUT SECTION ===== */
+    .about-section {
+      padding: 100px 0;
+      background: var(--bg-light);
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .section-title h2 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 1rem;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      border-radius: 2px;
+    }
+
+    .about-img-container {
+      position: relative;
+    }
+
+    .about-img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-xl);
+      transition: var(--transition);
+    }
+
+    .about-img:hover {
+      transform: scale(1.02);
+    }
+
+    .about-content h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+    }
+
+    .about-content p {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .tech-stack {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .tech-item {
+      background: white;
+      padding: 1.5rem;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+    }
+
+    .tech-item:hover {
+      box-shadow: var(--shadow-lg);
+      transform: translateY(-5px);
+    }
+
+    .tech-item h5 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+      color: var(--primary-color);
+    }
+
+    .tech-item p {
+      font-size: 0.95rem;
+      margin-bottom: 0;
+    }
+
+    .btn-read-more {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn-read-more:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      color: white;
+    }
+
+    /* ===== SERVICES SECTION ===== */
+    .services-section {
+      padding: 100px 0;
+      background: var(--bg-white);
+    }
+
+    .service-card {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 2.5rem 2rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      height: 100%;
+      border: 2px solid transparent;
+    }
+
+    .service-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-xl);
+      border-color: var(--primary-color);
+    }
+
+    .service-card i {
+      font-size: 3rem;
+      color: var(--primary-color);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .service-card h4 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .service-card p {
+      color: var(--text-secondary);
+      margin-bottom: 0;
+      font-size: 1rem;
+    }
+
+    /* ===== PORTFOLIO SECTION ===== */
+    .portfolio-section {
+      padding: 100px 0;
+      background: var(--bg-light);
+    }
+
+    .portfolio-card {
+      background: white;
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      height: 100%;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-10px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    .portfolio-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .portfolio-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .portfolio-content {
+      padding: 2rem;
+    }
+
+    .portfolio-content h4 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    .portfolio-content p {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-portfolio {
+      color: var(--primary-color);
+      font-weight: 600;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+    }
+
+    .btn-portfolio:hover {
+      gap: 1rem;
+      color: var(--primary-dark);
+    }
+
+    /* ===== REVIEWS SECTION ===== */
+    .reviews-section {
+      padding: 100px 0;
+      background: var(--bg-white);
+    }
+
+    .review-card {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-md);
+      transition: var(--transition);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .review-card:hover {
+      box-shadow: var(--shadow-xl);
+    }
+
+    .review-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .review-logo {
+      width: 50px;
+      height: 50px;
+      object-fit: contain;
+    }
+
+    .review-rating {
+      color: #fbbf24;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+
+    .review-text {
+      flex-grow: 1;
+      color: var(--text-secondary);
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      line-height: 1.8;
+    }
+
+    .review-author {
+      font-weight: 600;
+      color: var(--text-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .review-platform {
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    }
+
+    /* ===== CONTACT SECTION ===== */
+    .contact-section {
+      padding: 100px 0;
+      background: var(--bg-light);
+    }
+
+    .contact-form {
+      background: white;
+      border-radius: var(--border-radius);
+      padding: 3rem;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .form-control, .form-select, textarea {
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+
+    .form-control:focus, .form-select:focus, textarea:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
+    }
+
+    .btn-submit {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      border: none;
+      padding: 1rem 3rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      transition: var(--transition);
+      width: 100%;
+    }
+
+    .btn-submit:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: linear-gradient(135deg, #1e293b, #334155);
+      color: white;
+      padding: 3rem 0 1.5rem;
+    }
+
+    .footer-social {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-link {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+
+    .footer-link:hover {
+      background: var(--primary-color);
+      color: white;
+      transform: translateY(-5px);
+    }
+
+    .footer-text {
+      text-align: center;
+      opacity: 0.8;
+      margin-bottom: 0;
+    }
+
+    /* ===== BACK TO TOP ===== */
+    .back-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      color: white;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+      z-index: 1000;
+      cursor: pointer;
+    }
+
+    .back-to-top.show {
+      display: flex;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-xl);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 768px) {
+      .hero {
+        min-height: 90vh;
+        text-align: center;
+      }
+
+      .social-links {
+        justify-content: center;
+      }
+
+      .about-img {
+        height: 300px;
+        margin-bottom: 2rem;
+      }
+
+      .tech-stack {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        padding: 2rem 1.5rem;
+      }
+    }
+
+    /* ===== ANIMATIONS ===== */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in-up {
+      animation: fadeInUp 0.6s ease-out;
+    }
+
+    /* ===== LOADING OPTIMIZATION ===== */
+    img {
+      loading: lazy;
+    }
+
+    /* ===== UTILITY CLASSES ===== */
+    .gradient-text {
+      background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo"><img src="assets/img/logo1.png" alt="" class="img-fluid"> Nasir's Portfolio</a>
-   
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link  scrollto" href="#journal">Portfolio</a></li>
-         
-        </ul>
-        <ul>
-           <li><a class="nav-link  scrollto" href="#get-in-touch">Message me!</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-<style>.fiverr-logo {
-  width: 24px;       /* Adjust to your preferred size */
-  height: 24px;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover;  /* Ensures the image scales properly */
-  margin-top: -4px;
-}
-
-  .fiverr-logo {
-    transition: 0.3s ease;
-}
-
-.fiverr-logo:hover {
-    filter: invert(27%) sepia(80%) saturate(450%) hue-rotate(100deg) brightness(45%) contrast(90%);
-}
-
-</style>
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="home">
-
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <div class="hero-content">
-        <h1 class="fontChange">I'm <span class="typed" data-typed-items="Nasir Hussain, a Web Developer, "></span></h1>
-        <p>Turn concepts into web realities</p>
-    
-        <ul class="list-unstyled list-social">
-          <li><a target="_blank" href="https://www.fiverr.com/s/7Y5ZjD4"><img class="fiverr-logo" src="/assets/img/download.png" title="my Fiverr account" alt="Fiverr Logo"></a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/" title="my Linkedin account"><i class="bi bi-linkedin"></i></a></li>
-          <li><a target="_blank" href="https://github.com/NasirJamali" title="my Github account"><i class="bi bi-github"></i></a></li>
-<!--           <li><a target="_blank" href="https://www.instagram.com/nasiryouknow"><i class="bi bi-instagram"></i></a></li> -->
-          <li><a href="#get-in-touch"><i class="fas fa-comment-alt"title="Get in Touch"></i></a></li>
-          <!-- <li><a target="_blank" href="#"><img class="fiverr-logo" src="/assets/img/download.png" alt="Fiverr Logo"></a></li> -->
+      <a class="navbar-brand" href="#hero">
+        <img src="assets/img/logo1.png" alt="Nasir Hussain Logo">
+        <span>Nasir Dev</span>
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link active" href="#hero">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#reviews">Reviews</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-contact" href="#contact">Get In Touch</a>
+          </li>
         </ul>
-        
-        
       </div>
     </div>
-  </div><!-- End Hero -->
+  </nav>
 
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
-      <div class="container">
-        <div class="row justify-content-between">
-
-          <div class="col-lg-4 ">
-            <div class="div-img-bg">
-              <div class="about-img">
-                <img src="assets/img/about.jpeg" class="img-responsive" alt="me">
-              </div>
+  <!-- ===== HERO SECTION ===== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero-content" data-aos="fade-up">
+            <h1>Hi, I'm <span class="typed"></span></h1>
+            <p>Transforming ideas into powerful web experiences</p>
+            <div class="social-links">
+              <a href="https://www.fiverr.com/s/7Y5ZjD4" target="_blank" class="social-link" title="Fiverr">
+                <img src="/assets/img/download.png" alt="Fiverr">
+              </a>
+              <a href="https://www.linkedin.com/in/nasirhussaindev/" target="_blank" class="social-link" title="LinkedIn">
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="https://github.com/NasirJamali" target="_blank" class="social-link" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://www.instagram.com/nasiryouknow" target="_blank" class="social-link" title="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#contact" class="social-link" title="Contact Me">
+                <i class="fas fa-comment-alt"></i>
+              </a>
             </div>
-          </div>
-
-          <div class="col-lg-7">
-            <div class="about-descr" class="content">
-              <p class="p-heading">Hi, I'm Nasir Hussain</p>
-              <p class="separator">"I'm a Full-Stack Web Developer with over 5 years of experience. During this time, I've successfully taken numerous web projects from ideas to fully polished creations. My main goal is to create the best website for you, ensuring it’s not only high-quality but also perfectly aligned with your needs"</p>
-        
-                <br>
-                 <button class="read-more-button" onclick="toggleHiddenContent()">Read More <i class="fas fa-chevron-down"></i></button>
-                 <div id="hidden-content" style="display: none;">
-
-                 <p>⚡ Front-End Development :
-                <br>💠 | • Html | • Css | • JavaScript |</p>
-                 
-                 <p>⚡ Libraries and Frameworks
-                <br>💠 | • Bootstrap | • Tailwind | • React |</p>
-                 
-                 <p>⚡ Back-End Development  :
-                <br>💠 | • PHP | • Node Js | • Express Js | </p>
-                
-                 <p>⚡ DataBase :
-                <br>💠 | • MySQL | • MongoDb | </p>
-                
-             
-                
-                    <br> Throughout my journey, I've crafted numerous websites. With my passion 
-                    and expertise, I have the ability to create exceptional websites that stand out. Your ideas are
-                     important – I'm here to bring them to life in the best possible way. 
-                 
-                    <br>
-                   <strong><br>Regards,</strong>
-                   <strong><br>Nasir Hussain</strong>
-                  </p>
-                </div>
-            </div>
-
           </div>
         </div>
       </div>
-    </div><!-- End About Section -->
-
-    <style>
-      /* Add shadow to each slide */
-/* Add shadow to each slide */
-.swiper-slide .services-block {
-  background-color: #eef7f7;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adjust the values to control shadow intensity and spread */
-  border-radius: 8px; /* Optional: Adds a subtle rounding of corners */
-  padding: 20px; /* Optional: Adds space inside each block for a better look */
-  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover effect */
-}
-
-.swiper-slide .services-block:hover {
-  transform: scale(1.05); /* Grows slightly on hover */
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow on hover */
-}
-.btn-primary {
-    background-color: #0da6e5;
-   
-}
-
-.btn-primary:hover {
-    background-color: #406a94;
-    color: #f0f0f0;
-    transform: scale(1.05); /* Grows slightly on hover */
-  box-shadow: 0px 6px 20px rgba(107, 107, 107, 0.8); /* Adds a stronger shadow on hover */
-}
-
-    </style>
-
-    <!-- ======= Services Section ======= -->
-    <div id="services">
-      <div class="container">
-
-        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="fas fa-desktop"></i>
-                <span>FRONT-END DEVELOPMENT</span>
-                <p class="separator"> "Beautiful websites using HTML, CSS, JavaScript & Bootstrap" </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="fas fa-window-restore"></i>
-                <span>BACK-END DEVELOPMENT</span>
-                <p class="separator">"In back-end development, I'm armed with PHP & Node.js " </p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="fas fa-server"></i>
-                <span>DATABASE DEVELOPMENT</span>
-                <p class="separator">"In the world of databases, my top choices are MySQl and MongoDB"</p>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="fas fa-laptop-code"></i>
-                <span>UPGRADING YOUR WEBSITE</span>
-                <p class="separator">"Let's sprinkle some magic on your website with exciting new features!"</p>
-              </div>
-            </div><!-- End testimonial item -->
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-      </div>
-    </div><!-- End Services Section -->
-
-    <!-- ======= Journal Section ======= -->
-    <div id="journal" class="text-left paddsection">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>My Recent Work</h2>
-        </div>
-      </div>
-
-      <div class="container">
-        <div class="journal-block">
-          <div class="row">
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <div class="Video">
-                  <a href="blog-single.html"><iframe width="560" height="315" src="https://www.youtube.com/embed/vOuRZuVR30M?si=QabBy8KuhmxRyoN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
-                </div>
-                
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single.html">TESLA CLONE WEBSITE</a></h4>
-                  <p class="separator">Crafted using HTML, CSS, and JavaScript, no front-end frameworks required </p>
-                 <p><a href="blog-single"><strong>Read More...</strong></a></p> 
-                 
-
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <div class="Video">
-                  <a href="blog-single 2.html"><iframe width="560" height="315" src="https://www.youtube.com/embed/ICDOiPI26hY?si=rqiEI33Xd0-bUBj9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
-                </div>
-
-               
-
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single 2.html">TRAVEL AGENCY WEBSITE</a></h4>
-                  <p class="separator">Made with the magic of HTML, CSS, JavaScript & Bootstrap  </p>
-                  <p><a href="blog-single 2.html"><strong>Read More...</strong></a></p> 
-
-                </div>
-
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6">
-              <div class="journal-info">
-
-                <div class="Video">
-                  <a href="blog-single 3.html"><iframe width="560" height="315" src="https://www.youtube.com/embed/lCCWs1DIQSM?si=XUWzIaD4OBYs0BmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
-                </div>
-
-               
-
-                <div class="journal-txt">
-
-                  <h4><a href="blog-single 3.html">OTT MOVIES WEBSITE</a></h4>
-                  <p class="separator">Made With Pure HTML, CSS, and JavaScript, alongside the power of Node.js and Express </p>
-                  <p><a href="blog-single 3.html"><strong>Read More...</strong></a></p> 
-
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-
-    </div><!-- End Journal Section -->
-
-
-      <!-- ======= Reviews Section ======= -->
-<div id="reviews" class="paddsection">
-  <div class="container">
-    <div class="section-title text-center">
-      <h2>What My Clients Say</h2>
-      <p class="separator">Check out what my clients think about my work.</p>
     </div>
+  </section>
 
-    <div class="reviews-slider swiper" data-aos="fade-up" data-aos-delay="100">
-      <div class="swiper-wrapper">
-        <!-- Review 1 -->
-        <div class="swiper-slide">
-          <div class="review-block">
-            <img src="assets/img/logofiver.png" class="client-img" alt="Client 1 Website Image">
-            <p class="review-text">"Nasir delivered an exceptional website for our business. The design was exactly what we envisioned, and the functionality works flawlessly."</p>
-            <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-            <h6 class="client-name">@peachesestrada</h6>
-            <p class="client-company">Fiverr.</p>
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>About Me</h2>
+      </div>
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="about-img-container">
+            <img src="assets/img/about.jpeg" alt="Nasir Hussain - Web Developer" class="about-img">
           </div>
         </div>
-        
-        <!-- Review 2 -->
-        <div class="swiper-slide">
-          <div class="review-block">
-            <img src="assets/img/logoupwork.png" class="client-img" alt="Client 2 Website Image">
-            <p class="review-text">"Nasir was great to work with. I had him clone a website, 1:1 and he did a great job, lot of attention to detail. I had a few small issues uploading it to my shared hosting plan, and Nasir jumped in and sorted everything out very quickly. This is the kind of service and commitment to the client that Upwork needs more of! Will 100% be working with him again!"</p>
-            <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-            <h6 class="client-name">@GregoryYoung</h6>
-            <p class="client-company">Upwork.</p>
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="about-content">
+            <h3>Full-Stack Web Developer</h3>
+            <p>I'm a passionate Full-Stack Web Developer with over 5 years of experience creating modern, responsive, and user-friendly websites. My mission is to transform your ideas into exceptional digital experiences that not only look stunning but also drive results.</p>
+            <p>From concept to deployment, I handle every aspect of web development with precision and creativity, ensuring your project exceeds expectations.</p>
+            
+            <div class="tech-stack">
+              <div class="tech-item">
+                <h5><i class="fas fa-code"></i> Front-End</h5>
+                <p>HTML5 • CSS3 • JavaScript • React • Bootstrap • Tailwind</p>
+              </div>
+              <div class="tech-item">
+                <h5><i class="fas fa-server"></i> Back-End</h5>
+                <p>Node.js • Express.js • PHP</p>
+              </div>
+              <div class="tech-item">
+                <h5><i class="fas fa-database"></i> Database</h5>
+                <p>MongoDB • MySQL</p>
+              </div>
+              <div class="tech-item">
+                <h5><i class="fas fa-tools"></i> Tools</h5>
+                <p>Git • VS Code • Figma • REST APIs</p>
+              </div>
+            </div>
           </div>
         </div>
-        
-        <!-- Review 3 -->
-        <div class="swiper-slide">
-          <div class="review-block">
-            <img src="assets/img/logofiver.png" class="client-img" alt="Client 3 Website Image">
-            <p class="review-text">"Was amazing. Started before the order to make sure he could complete the task and managed to get the functionality done. Then placed the Oder and only took a day to get 90% of it completed, ran into a few problems but was solved very fast and now my site works perfectly"</p>
-            <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-            <h6 class="client-name">@aidenw_2210</h6>
-            <p class="client-company">Fiverr.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>What I Offer</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card text-center">
+            <i class="fas fa-desktop"></i>
+            <h4>Front-End Development</h4>
+            <p>Beautiful, responsive interfaces using modern frameworks and best practices</p>
           </div>
         </div>
-          <!-- Review 2 -->
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card text-center">
+            <i class="fas fa-code"></i>
+            <h4>Back-End Development</h4>
+            <p>Robust server-side solutions with Node.js, Express, and PHP</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card text-center">
+            <i class="fas fa-database"></i>
+            <h4>Database Design</h4>
+            <p>Efficient database architecture with MySQL and MongoDB</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+<div class="service-card text-center">
+<i class="fas fa-rocket"></i>
+<h4>Website Upgrades</h4>
+<p>Modernize your existing website with new features and performance</p>
+</div>
+</div>
+</div>
+</div>
+  </section>
+  <!-- ===== PORTFOLIO SECTION ===== -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Recent Projects</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="portfolio-card">
+            <div class="portfolio-video">
+              <iframe src="https://www.youtube.com/embed/vOuRZuVR30M" title="Tesla Clone Website" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <div class="portfolio-content">
+              <h4>Tesla Clone Website</h4>
+              <p>A pixel-perfect clone built with vanilla HTML, CSS, and JavaScript featuring smooth animations and responsive design.</p>
+              <a href="blog-single.html" class="btn-portfolio">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="portfolio-card">
+            <div class="portfolio-video">
+              <iframe src="https://www.youtube.com/embed/ICDOiPI26hY" title="Travel Agency Website" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <div class="portfolio-content">
+              <h4>Travel Agency Website</h4>
+              <p>Modern travel booking platform with Bootstrap, featuring interactive maps and booking functionality.</p>
+              <a href="blog-single 2.html" class="btn-portfolio">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="portfolio-card">
+            <div class="portfolio-video">
+              <iframe src="https://www.youtube.com/embed/lCCWs1DIQSM" title="OTT Movies Website" loading="lazy" allowfullscreen></iframe>
+            </div>
+            <div class="portfolio-content">
+              <h4>OTT Movies Platform</h4>
+              <p>Full-stack streaming platform with Node.js backend, featuring user authentication and video streaming.</p>
+              <a href="blog-single 3.html" class="btn-portfolio">View Details <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== REVIEWS SECTION ===== -->
+  <section id="reviews" class="reviews-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Client Testimonials</h2>
+      </div>
+      <div class="swiper reviews-swiper" data-aos="fade-up" data-aos-delay="100">
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="review-block">
-              <img src="assets/img/logoupwork.png" class="client-img" alt="Client 2 Website Image">
-              <p class="review-text">"Nasir is great, he created a Portfolio website for me in that low budget, and the website was way better then i expect, highly recommended Freelancer."</p>
-              <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-              <h6 class="client-name">@RehanAhmed</h6>
-              <p class="client-company">Upwork.</p>
+            <div class="review-card">
+              <div class="review-header">
+                <img src="assets/img/logofiver.png" alt="Fiverr" class="review-logo">
+              </div>
+              <div class="review-rating">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"Nasir delivered an exceptional website for our business. The design was exactly what we envisioned, and the functionality works flawlessly."</p>
+              <h6 class="review-author">@peachesestrada</h6>
+              <p class="review-platform">Fiverr</p>
             </div>
           </div>
-
-            <!-- Review 2 -->
-            <div class="swiper-slide">
-              <div class="review-block">
-                <img src="assets/img/logofiver.png" class="client-img" alt="Client 2 Website Image">
-                <p class="review-text">"Great to work with, cares about the product more so than the money."</p>
-                <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-                <h6 class="client-name">@echiti9</h6>
-                <p class="client-company">Fiverr.</p>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <img src="assets/img/logoupwork.png" alt="Upwork" class="review-logo">
               </div>
+              <div class="review-rating">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"Nasir was great to work with. I had him clone a website, 1:1 and he did a great job, lot of attention to detail. Will 100% be working with him again!"</p>
+              <h6 class="review-author">@GregoryYoung</h6>
+              <p class="review-platform">Upwork</p>
             </div>
-        <!-- Review 4 -->
-        <div class="swiper-slide">
-          <div class="review-block">
-            <img src="assets/img/logofiver.png" class="client-img" alt="Client 4 Website Image">
-            <p class="review-text">"
-              He went above and beyond to make sure he ticked everything off my bucket list. He understood all my wants and needs and orchestrated the project perfectly. He did not miss a single thing. Defo recommend to everyone!"</p>
-            <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-            <h6 class="client-name">@shaha8</h6>
-            <p class="client-company">Fiverr.</p>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <img src="assets/img/logofiver.png" alt="Fiverr" class="review-logo">
+              </div>
+              <div class="review-rating">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"Was amazing. Started before the order to make sure he could complete the task and managed to get the functionality done. Now my site works perfectly!"</p>
+              <h6 class="review-author">@aidenw_2210</h6>
+              <p class="review-platform">Fiverr</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <img src="assets/img/logoupwork.png" alt="Upwork" class="review-logo">
+              </div>
+              <div class="review-rating">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"Nasir is great, he created a Portfolio website for me in that low budget, and the website was way better than I expected, highly recommended!"</p>
+              <h6 class="review-author">@RehanAhmed</h6>
+              <p class="review-platform">Upwork</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <img src="assets/img/logofiver.png" alt="Fiverr" class="review-logo">
+              </div>
+              <div class="review-rating">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"Great to work with, cares about the product more so than the money."</p>
+              <h6 class="review-author">@echiti9</h6>
+              <p class="review-platform">Fiverr</p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-card">
+              <div class="review-header">
+                <img src="assets/img/logofiver.png" alt="Fiverr" class="review-logo">
+              </div>
+              <div class="review-rating">⭐⭐⭐⭐⭐</div>
+              <p class="review-text">"He went above and beyond to make sure he ticked everything off my bucket list. He understood all my wants and needs and orchestrated the project perfectly!"</p>
+              <h6 class="review-author">@shaha8</h6>
+              <p class="review-platform">Fiverr</p>
+            </div>
           </div>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- Add pagination for the slider -->
-      <div class="swiper-pagination"></div>
     </div>
-  </div>
-</div><!-- End Reviews Section -->
-
-<!-- Add the necessary swiper CSS and JS if not included already -->
-<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-<script>
-  const swiper = new Swiper('.reviews-slider', {
-    loop: true, // Enables the loop for continuous sliding
-    slidesPerView: 1,
-    spaceBetween: 30,
-    autoplay: {
-      delay: 3000, // 3 seconds delay between slides
-      disableOnInteraction: false, // Keeps autoplay active even after user interaction
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    breakpoints: {
-      768: {
-        slidesPerView: 2,
-      },
-      1024: {
-        slidesPerView: 3,
-      },
-    },
-  });
-</script>
-
-<!-- Styles for the review section -->
-<style>
-  .review-block {
-    background-color: #f3f3f3;;
-    border-radius: 8px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-  }
-
-  .client-img {
-    width: 30%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 1px;
-  }
-
-  .review-text {
-    font-size: 16px;
-    font-style: italic;
-    color: #555;
-    margin-bottom: 15px;
-  }
-
-  .client-name {
-    font-weight: bold;
-    color: #333;
-  }
-
-  .client-company {
-    color: #777;
-    font-size: 14px;
-  }
-
-  .swiper-pagination {
-    text-align: center;
-    margin-top: 20px;
-  }
-</style>
-
-    
-    
-<!-- ======= Contact Form Section ======= -->
-<section id="get-in-touch">
-<div class="container py-5">
-  <h1 class="h1 text-center mb-4 text-primary">GET IN TOUCH</h1>
-  <div class="row justify-content-center">
-    <div class="col-lg-8 col-md-10">
-      <div class="form-container shadow-sm p-4 bg-light">
-        <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
-          <input type="hidden" name="access_key" value="e5284c8b-48a8-46e0-b8a5-f6880ad11616">
-
-          <div class="mb-3">
-            <label for="name" class="form-label">Your Name</label>
-            <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required>
+  </section>
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-title" data-aos="fade-up">
+        <h2>Get In Touch</h2>
+        <p class="text-secondary mt-3">Have a project in mind? Let's work together!</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="contact-form" data-aos="fade-up" data-aos-delay="100">
+            <form action="https://api.web3forms.com/submit" method="POST">
+              <input type="hidden" name="access_key" value="e5284c8b-48a8-46e0-b8a5-f6880ad11616">
+              <input type="hidden" name="subject" value="New Contact from nasirweb.online">
+          <div class="mb-4">
+            <label for="name" class="form-label fw-semibold">Your Name *</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" required>
           </div>
-
-          <div class="mb-3">
-            <label for="email" class="form-label">Your Email</label>
-            <input class="form-control" type="email" id="email" name="email" placeholder="Your Email" required>
+          
+          <div class="mb-4">
+            <label for="email" class="form-label fw-semibold">Your Email *</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="john@example.com" required>
           </div>
-
-          <div class="mb-3">
-            <label for="message" class="form-label">Your Message</label>
-            <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          
+          <div class="mb-4">
+            <label for="message" class="form-label fw-semibold">Your Message *</label>
+            <textarea class="form-control" id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
           </div>
-
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-          </div>
+          
+          <button type="submit" class="btn btn-submit">
+            <i class="fas fa-paper-plane me-2"></i> Send Message
+          </button>
         </form>
       </div>
     </div>
   </div>
-</div><!-- End Contact Form Section -->
-</section>
-<style>
-
-
-  /* Add a box with a light black shadow around the form */
-  .form-container {
-    background-color: white; /* White background for the box */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light black shadow */
-  }
-
-  .form-container:hover{
-   
-    transform: scale(1.01); /* Grows slightly on hover */
- 
-}
-  
-</style>
-
-  
-  </main><!-- End #main -->
-  
-
-  <!-- ======= Footer ======= -->
-  <div id="footer" class="text-center">
+</div>
+  </section>
+  <!-- ===== FOOTER ===== -->
+  <footer>
     <div class="container">
-      <div class="socials-media text-center">
-
-        <ul class="list-unstyled">
-          <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/"><i class="bi bi-linkedin"></i>
-            <li><a target="_blank" href="https://github.com/NasirJamali"><i class="bi bi-github"></i></a></li>
-            <!-- <li><a target="_blank" href="https://www.facebook.com/nasirhussain888"><i class="bi bi-facebook"></i></a></li> -->
-            <li><a target="_blank" href="https://www.instagram.com/nasiryouknow"><i class="bi bi-instagram"></i></a></li>
-            <li> <a href="#get-in-touch"><i  class="fas fa-comment-alt"></i></a></li>
-          </ul>
-
+      <div class="footer-social">
+        <a href="https://www.fiverr.com/s/7Y5ZjD4" target="_blank" class="footer-link" title="Fiverr">
+          <i class="fas fa-f"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/nasirhussaindev/" target="_blank" class="footer-link" title="LinkedIn">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://github.com/NasirJamali" target="_blank" class="footer-link" title="GitHub">
+          <i class="bi bi-github"></i>
+        </a>
+        <a href="https://www.instagram.com/nasiryouknow" target="_blank" class="footer-link" title="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="mailto:nasirhere678@gmail.com" class="footer-link" title="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
       </div>
-
-      <p>&copy; Copyrights by nasirhere678@gmail.com</p>
-     
+      <p class="footer-text">© 2024 Nasir Hussain. All rights reserved. | nasirhere678@gmail.com</p>
     </div>
-  </div><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-
-  
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  </footer>
+  <!-- ===== BACK TO TOP ===== -->
+  <a href="#hero" class="back-to-top">
+    <i class="bi bi-arrow-up"></i>
+  </a>
+  <!-- ===== SCRIPTS ===== -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16"></script>
+  <!-- AOS Animation -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-  function toggleHiddenContent() {
-    var hiddenContent = document.getElementById('hidden-content');
-    var readMoreButton = document.querySelector('.read-more-button');
-  
-    if (hiddenContent.style.display === 'none') {
-      hiddenContent.style.display = 'block';
-      readMoreButton.textContent = 'As a Developer i use following technologies';
-    } else {
-      hiddenContent.style.display = 'none';
-      readMoreButton.textContent = 'Read More';
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
+
+    // Typed.js initialization
+    new Typed('.typed', {
+      strings: ['Nasir Hussain', 'a Full-Stack Developer', 'a Web Designer', 'your next developer'],
+      typeSpeed: 60,
+      backSpeed: 40,
+      loop: true
+    });
+
+    // Navbar scroll effect
+    window.addEventListener('scroll', function() {
+      const navbar = document.querySelector('.navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (scrollY >= (sectionTop - 100)) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Back to top button
+    const backToTop = document.querySelector('.back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('show');
+      } else {
+        backToTop.classList.remove('show');
+      }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+          // Close mobile menu if open
+          const navbarCollapse = document.querySelector('.navbar-collapse');
+          if (navbarCollapse.classList.contains('show')) {
+            navbarCollapse.classList.remove('show');
+          }
+        }
+      });
+    });
+
+    // Reviews Swiper
+    const reviewsSwiper = new Swiper('.reviews-swiper', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      }
+    });
+
+    // Form submission success message
+    const contactForm = document.querySelector('#contact form');
+    contactForm.addEventListener('submit', function(e) {
+      // Let Web3Forms handle the submission
+      setTimeout(() => {
+        contactForm.reset();
+      }, 1000);
+    });
+
+    // Lazy loading optimization
+    if ('loading' in HTMLImageElement.prototype) {
+      const images = document.querySelectorAll('img[loading="lazy"]');
+      images.forEach(img => {
+        img.src = img.src;
+      });
     }
-  }
   </script>
-  
-  
-  
-  
-  
-  
-
-  
-
 </body>
-
 </html>
