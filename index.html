@@ -17,7 +17,7 @@
   <!-- Open Graph Meta Tags (For Social Media Sharing) -->
   <meta property="og:title" content="Nasir Hussain's Portfolio">
   <meta property="og:description" content="Explore the professional portfolio of Nasir Hussain, a skilled web developer with expertise in both front-end and back-end development.">
-  <meta property="og:image" content="https://nasirweb.site/assets/img/logo1.png">
+  <meta property="og:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
   <meta property="og:url" content="https://nasirweb.site">
   <meta property="og:type" content="website">
   
@@ -25,7 +25,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nasir Hussain's Portfolio">
   <meta name="twitter:description" content="Discover the web development projects and skills of Nasir Hussain, a full-stack developer specializing in responsive and engaging websites.">
-  <meta name="twitter:image" content="https://nasirweb.site/assets/img/logo1.png">
+  <meta name="twitter:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
   
   <!-- Schema.org Markup for Person -->
   <script type="application/ld+json">
@@ -46,15 +46,17 @@
     }
   }
   </script>
+  
+
 
   <!-- Favicons -->
   <link href="assets/img/logo1.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -65,323 +67,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Modern Enhancements CSS -->
-  <style>
-    /* Original Fiverr logo styles */
-    .fiverr-logo {
-      width: 24px;
-      height: 24px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-top: -4px;
-      transition: 0.3s ease;
-    }
-
-    .fiverr-logo:hover {
-        filter: invert(27%) sepia(80%) saturate(450%) hue-rotate(100deg) brightness(45%) contrast(90%);
-    }
-
-    /* Modern Enhancements */
-    /* Smooth scrolling */
-    html { scroll-behavior: smooth; }
-
-    /* Enhanced header */
-    #header {
-      backdrop-filter: blur(10px);
-      -webkit-backdrop-filter: blur(10px);
-      transition: all 0.3s ease;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    }
-
-    /* Logo hover animation */
-    .logo {
-      transition: all 0.3s ease;
-    }
-    .logo:hover {
-      transform: translateY(-2px);
-    }
-    .logo img {
-      transition: all 0.3s ease;
-      border-radius: 12px;
-    }
-    .logo img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    }
-
-    /* Navbar improvements */
-    .navbar a {
-      position: relative;
-      transition: all 0.3s ease;
-    }
-    .navbar a::after {
-      content: '';
-      position: absolute;
-      width: 0;
-      height: 2px;
-      bottom: -5px;
-      left: 50%;
-      background: linear-gradient(45deg, #0da6e5, #406a94);
-      transition: all 0.3s ease;
-      transform: translateX(-50%);
-      border-radius: 1px;
-    }
-    .navbar a:hover::after,
-    .navbar a.active::after {
-      width: 100%;
-    }
-
-    /* Hero section with animated gradient */
-    #hero {
-      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      background-size: 400% 400%;
-      animation: gradientMove 15s ease infinite;
-      position: relative;
-    }
-    #hero::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%), 
-                  linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%);
-      background-size: 60px 60px;
-      animation: float 20s linear infinite;
-      opacity: 0.3;
-    }
-    .hero-content {
-      position: relative;
-      z-index: 2;
-      animation: fadeInUp 1s ease;
-    }
-
-    /* Enhanced social icons */
-    .list-social li a {
-      border-radius: 12px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    .list-social li a:hover {
-      transform: translateY(-3px) scale(1.05);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-      background: rgba(255,255,255,0.15);
-    }
-
-    /* About section improvements */
-    .div-img-bg {
-      border-radius: 20px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
-    .div-img-bg:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-    }
-    .about-img img {
-      transition: all 0.3s ease;
-    }
-    .about-img:hover img {
-      transform: scale(1.02);
-    }
-    .read-more-button {
-      border-radius: 25px !important;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(13, 166, 229, 0.3);
-    }
-    .read-more-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(13, 166, 229, 0.4);
-    }
-
-    /* Enhanced services section */
-    .swiper-slide .services-block {
-      background-color: #eef7f7;
-      border-radius: 20px !important;
-      padding: 30px 20px;
-      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-      border: 1px solid rgba(255,255,255,0.8);
-    }
-    .swiper-slide .services-block:hover {
-      transform: translateY(-8px) scale(1.02) !important;
-      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.15) !important;
-      border-color: rgba(13, 166, 229, 0.3);
-      background-color: #f8fdff !important;
-    }
-
-    /* Enhanced buttons */
-    .btn-primary {
-      background: linear-gradient(45deg, #0da6e5, #406a94) !important;
-      border: none;
-      border-radius: 25px !important;
-      padding: 12px 30px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(13, 166, 229, 0.3);
-    }
-    .btn-primary:hover {
-      background: linear-gradient(45deg, #406a94, #0da6e5) !important;
-      color: #f0f0f0;
-      transform: translateY(-2px) !important;
-      box-shadow: 0 8px 25px rgba(13, 166, 229, 0.4) !important;
-    }
-
-    /* Portfolio improvements */
-    .journal-info {
-      border-radius: 20px;
-      overflow: hidden;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-      border: 1px solid rgba(255,255,255,0.8);
-    }
-    .journal-info:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-    }
-    .journal-info iframe {
-      transition: all 0.3s ease;
-    }
-    .journal-info:hover iframe {
-      transform: scale(1.05);
-    }
-    .journal-txt a {
-      transition: all 0.3s ease;
-    }
-    .journal-txt a:hover {
-      color: #0da6e5;
-      text-decoration: none;
-    }
-
-    /* Reviews section */
-    .review-block {
-      background-color: #f3f3f3;
-      border-radius: 20px !important;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-      padding: 20px;
-      text-align: center;
-      transition: all 0.3s ease;
-      border: 1px solid rgba(255,255,255,0.8);
-    }
-    .review-block:hover {
-      transform: translateY(-5px);
-      box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1) !important;
-    }
-    .client-img {
-      width: 30%;
-      max-width: 300px;
-      height: auto;
-      border-radius: 12px !important;
-      margin-bottom: 1px;
-      transition: all 0.3s ease;
-    }
-    .client-img:hover {
-      transform: scale(1.05);
-    }
-    .review-text {
-      font-size: 16px;
-      font-style: italic;
-      color: #555;
-      margin-bottom: 15px;
-    }
-    .client-name {
-      font-weight: bold;
-      color: #333;
-    }
-    .client-company {
-      color: #777;
-      font-size: 14px;
-    }
-
-    /* Contact form */
-    .form-container {
-      background-color: white;
-      border-radius: 25px !important;
-      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.2);
-      transition: all 0.3s ease;
-    }
-    .form-container:hover {
-      transform: translateY(-3px) !important;
-      box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
-    }
-    .form-control {
-      border-radius: 12px;
-      border: 2px solid #e9ecef;
-      transition: all 0.3s ease;
-      padding: 12px 18px;
-    }
-    .form-control:focus {
-      border-color: #0da6e5;
-      box-shadow: 0 0 0 3px rgba(13, 166, 229, 0.1);
-      transform: translateY(-1px);
-    }
-
-    /* Footer */
-    #footer {
-      background: linear-gradient(135deg, #2c3e50, #3498db) !important;
-      position: relative;
-    }
-    #footer::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-    }
-    #footer .socials-media a {
-      border-radius: 12px;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(10px);
-      border: 1px solid rgba(255,255,255,0.2);
-    }
-    #footer .socials-media a:hover {
-      transform: translateY(-3px) scale(1.1);
-      background: rgba(255,255,255,0.15);
-    }
-
-    /* Back to top */
-    .back-to-top {
-      border-radius: 50%;
-      background: linear-gradient(45deg, #0da6e5, #406a94) !important;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(13, 166, 229, 0.3);
-    }
-    .back-to-top:hover {
-      transform: translateY(-3px) scale(1.1);
-      box-shadow: 0 8px 25px rgba(13, 166, 229, 0.4);
-    }
-
-    /* Animations */
-    @keyframes gradientMove {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-    @keyframes float {
-      0% { transform: translateX(0px); }
-      100% { transform: translateX(-60px); }
-    }
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    /* Mobile responsiveness */
-    @media (max-width: 768px) {
-      .logo { font-size: 1.1rem; }
-      .logo img { width: 35px; height: 35px; }
-      .list-social { flex-wrap: wrap; justify-content: center; }
-      .list-social li { margin: 5px; }
-    }
-  </style>
 </head>
 
 <body>
@@ -407,7 +92,23 @@
 
     </div>
   </header><!-- End Header -->
+<style>.fiverr-logo {
+  width: 24px;       /* Adjust to your preferred size */
+  height: 24px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover;  /* Ensures the image scales properly */
+  margin-top: -4px;
+}
 
+  .fiverr-logo {
+    transition: 0.3s ease;
+}
+
+.fiverr-logo:hover {
+    filter: invert(27%) sepia(80%) saturate(450%) hue-rotate(100deg) brightness(45%) contrast(90%);
+}
+
+</style>
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="home">
 
@@ -420,7 +121,9 @@
           <li><a target="_blank" href="https://www.fiverr.com/s/7Y5ZjD4"><img class="fiverr-logo" src="/assets/img/download.png" title="my Fiverr account" alt="Fiverr Logo"></a></li>
           <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/" title="my Linkedin account"><i class="bi bi-linkedin"></i></a></li>
           <li><a target="_blank" href="https://github.com/NasirJamali" title="my Github account"><i class="bi bi-github"></i></a></li>
+<!--           <li><a target="_blank" href="https://www.instagram.com/nasiryouknow"><i class="bi bi-instagram"></i></a></li> -->
           <li><a href="#get-in-touch"><i class="fas fa-comment-alt"title="Get in Touch"></i></a></li>
+          <!-- <li><a target="_blank" href="#"><img class="fiverr-logo" src="/assets/img/download.png" alt="Fiverr Logo"></a></li> -->
         </ul>
         
         
@@ -446,7 +149,7 @@
           <div class="col-lg-7">
             <div class="about-descr" class="content">
               <p class="p-heading">Hi, I'm Nasir Hussain</p>
-              <p class="separator">"I'm a Full-Stack Web Developer with over 5 years of experience. During this time, I've successfully taken numerous web projects from ideas to fully polished creations. My main goal is to create the best website for you, ensuring it's not only high-quality but also perfectly aligned with your needs"</p>
+              <p class="separator">"I'm a Full-Stack Web Developer with over 5 years of experience. During this time, I've successfully taken numerous web projects from ideas to fully polished creations. My main goal is to create the best website for you, ensuring it’s not only high-quality but also perfectly aligned with your needs"</p>
         
                 <br>
                  <button class="read-more-button" onclick="toggleHiddenContent()">Read More <i class="fas fa-chevron-down"></i></button>
@@ -481,6 +184,35 @@
         </div>
       </div>
     </div><!-- End About Section -->
+
+    <style>
+      /* Add shadow to each slide */
+/* Add shadow to each slide */
+.swiper-slide .services-block {
+  background-color: #eef7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adjust the values to control shadow intensity and spread */
+  border-radius: 8px; /* Optional: Adds a subtle rounding of corners */
+  padding: 20px; /* Optional: Adds space inside each block for a better look */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover effect */
+}
+
+.swiper-slide .services-block:hover {
+  transform: scale(1.05); /* Grows slightly on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow on hover */
+}
+.btn-primary {
+    background-color: #0da6e5;
+   
+}
+
+.btn-primary:hover {
+    background-color: #406a94;
+    color: #f0f0f0;
+    transform: scale(1.05); /* Grows slightly on hover */
+  box-shadow: 0px 6px 20px rgba(107, 107, 107, 0.8); /* Adds a stronger shadow on hover */
+}
+
+    </style>
 
     <!-- ======= Services Section ======= -->
     <div id="services">
@@ -713,6 +445,48 @@
   });
 </script>
 
+<!-- Styles for the review section -->
+<style>
+  .review-block {
+    background-color: #f3f3f3;;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .client-img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1px;
+  }
+
+  .review-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .client-name {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .client-company {
+    color: #777;
+    font-size: 14px;
+  }
+
+  .swiper-pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+
+    
     
 <!-- ======= Contact Form Section ======= -->
 <section id="get-in-touch">
@@ -748,6 +522,23 @@
   </div>
 </div><!-- End Contact Form Section -->
 </section>
+<style>
+
+
+  /* Add a box with a light black shadow around the form */
+  .form-container {
+    background-color: white; /* White background for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light black shadow */
+  }
+
+  .form-container:hover{
+   
+    transform: scale(1.01); /* Grows slightly on hover */
+ 
+}
+  
+</style>
 
   
   </main><!-- End #main -->
@@ -775,6 +566,7 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+
   
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -793,43 +585,14 @@
   
     if (hiddenContent.style.display === 'none') {
       hiddenContent.style.display = 'block';
-      readMoreButton.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
+      readMoreButton.textContent = 'As a Developer i use following technologies';
     } else {
       hiddenContent.style.display = 'none';
-      readMoreButton.innerHTML = 'Read More <i class="fas fa-chevron-down"></i>';
+      readMoreButton.textContent = 'Read More';
     }
   }
-
-  // Modern enhancements
-  document.addEventListener('DOMContentLoaded', function() {
-    // Smooth scrolling for anchor links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      });
-    });
-
-    // Header scroll effect
-    window.addEventListener('scroll', function() {
-      const header = document.getElementById('header');
-      if (window.scrollY > 100) {
-        header.style.background = 'rgba(255, 255, 255, 0.95)';
-        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.15)';
-      } else {
-        header.style.background = '';
-        header.style.boxShadow = '';
-      }
-    });
-  });
   </script>
-
+  
 </body>
 
 </html>
