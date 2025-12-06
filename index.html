@@ -3,49 +3,42 @@
 
 <head>
   <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Nasir Hussain - Full-Stack Web Developer | Portfolio</title>
+  <title>Nasir's Portfolio</title>
   
   <!-- SEO Meta Tags -->
-  <meta name="description" content="Nasir Hussain - Professional Full-Stack Web Developer with 5+ years experience in HTML, CSS, JavaScript, React, Node.js, MongoDB. Based in Hyderabad. Expert in modern web development.">
-  <meta name="keywords" content="Nasir Hussain, web developer, full-stack developer, front-end development, back-end development, HTML, CSS, JavaScript, React, Node.js, MongoDB, Bootstrap, nasirweb.online">
-  <meta name="author" content="Nasir Hussain">
-  <link rel="canonical" href="https://nasirweb.online">
-  
-  <!-- Open Graph Meta Tags -->
-  <meta property="og:title" content="Nasir Hussain - Full-Stack Web Developer Portfolio">
-  <meta property="og:description" content="Professional web developer specializing in modern, responsive websites and full-stack applications with 5+ years of experience.">
-  <meta property="og:image" content="https://nasirweb.online/assets/img/logo1.png">
-  <meta property="og:url" content="https://nasirweb.online">
+  <meta name="description" content="Nasir Hussain's portfolio showcasing web development expertise in front-end, back-end, and database technologies. Professional web development projects and skills.">
+  <meta name="keywords" content="Nasir Hussain, web developer, portfolio, front-end development, back-end development, HTML, CSS, JavaScript, Node.js, MongoDB">
+  <link rel="canonical" href="https://nasirweb.site">
+  <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Open Graph Meta Tags (For Social Media Sharing) -->
+  <meta property="og:title" content="Nasir Hussain's Portfolio">
+  <meta property="og:description" content="Explore the professional portfolio of Nasir Hussain, a skilled web developer with expertise in both front-end and back-end development.">
+  <meta property="og:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
+  <meta property="og:url" content="https://nasirweb.site">
   <meta property="og:type" content="website">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nasir Hussain - Full-Stack Web Developer">
-  <meta name="twitter:description" content="Professional web developer with expertise in React, Node.js, and modern web technologies.">
-  <meta name="twitter:image" content="https://nasirweb.online/assets/img/logo1.png">
+  <meta name="twitter:title" content="Nasir Hussain's Portfolio">
+  <meta name="twitter:description" content="Discover the web development projects and skills of Nasir Hussain, a full-stack developer specializing in responsive and engaging websites.">
+  <meta name="twitter:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
   
-  <!-- Schema.org Markup -->
+  <!-- Schema.org Markup for Person -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Nasir Hussain",
     "jobTitle": "Full-Stack Web Developer",
-    "url": "https://nasirweb.online",
-    "image": "https://nasirweb.online/assets/img/about.jpeg",
-    "description": "Full-Stack Web Developer with 5+ years of experience creating modern, responsive websites",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Hyderabad",
-      "addressCountry": "PK"
-    },
+    "url": "https://nasirweb.site",
     "sameAs": [
       "https://www.linkedin.com/in/nasirhussaindev/",
       "https://github.com/NasirJamali",
-      "https://www.instagram.com/nasiryouknow",
-      "https://www.fiverr.com/s/7Y5ZjD4"
+      "https://www.instagram.com/nasiryouknow"
     ],
     "worksFor": {
       "@type": "Organization",
@@ -53,19 +46,17 @@
     }
   }
   </script>
+  
+
 
   <!-- Favicons -->
   <link href="assets/img/logo1.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Preconnect for Performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -76,547 +67,196 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- Enhanced Styles -->
-  <style>
-    /* Performance & Smooth Scrolling */
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-    }
-
-    /* Improved Header */
-    #header {
-      transition: all 0.3s ease;
-      box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
-    }
-
-    #header.header-scrolled {
-      box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12);
-    }
-
-    /* Better Logo Spacing */
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-    }
-
-    .logo:hover {
-      opacity: 0.85;
-    }
-
-    .logo img {
-      max-height: 45px;
-      transition: transform 0.3s ease;
-    }
-
-    .logo:hover img {
-      transform: scale(1.05);
-    }
-
-    /* Enhanced Navigation */
-    .navbar ul li {
-      margin: 0 8px;
-    }
-
-    .nav-link {
-      position: relative;
-      transition: all 0.3s ease;
-    }
-
-    .nav-link::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: #0da6e5;
-      transition: width 0.3s ease;
-    }
-
-    .nav-link:hover::after,
-    .nav-link.active::after {
-      width: 100%;
-    }
-
-    /* Improved Fiverr Logo */
-    .fiverr-logo {
-      width: 26px;
-      height: 26px;
-      border-radius: 50%;
-      object-fit: cover;
-      transition: all 0.3s ease;
-    }
-
-    .fiverr-logo:hover {
-      transform: scale(1.1);
-      filter: brightness(1.1);
-    }
-
-    /* Enhanced Social Links */
-    .list-social li {
-      transition: transform 0.3s ease;
-    }
-
-    .list-social li:hover {
-      transform: translateY(-3px);
-    }
-
-    .list-social a {
-      transition: all 0.3s ease;
-    }
-
-    /* Better About Image */
-    .about-img {
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      transition: all 0.4s ease;
-    }
-
-    .about-img:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Improved Read More Button */
-    .read-more-button {
-      background: linear-gradient(135deg, #0da6e5, #0891d1);
-      color: white;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 25px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      box-shadow: 0 4px 15px rgba(13, 166, 229, 0.3);
-    }
-
-    .read-more-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 20px rgba(13, 166, 229, 0.4);
-      background: linear-gradient(135deg, #0891d1, #0da6e5);
-    }
-
-    .read-more-button i {
-      margin-left: 5px;
-      transition: transform 0.3s ease;
-    }
-
-    .read-more-button:hover i {
-      transform: translateY(2px);
-    }
-
-    /* Enhanced Hidden Content */
-    #hidden-content {
-      animation: slideDown 0.4s ease;
-      margin-top: 20px;
-    }
-
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    /* Better Services Cards */
-    .swiper-slide .services-block {
-      background: linear-gradient(135deg, #eef7f7 0%, #f5fafa 100%);
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
-      border-radius: 12px;
-      padding: 30px 20px;
-      transition: all 0.4s ease;
-      border: 1px solid rgba(13, 166, 229, 0.1);
-    }
-
-    .swiper-slide .services-block:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.18);
-      border-color: rgba(13, 166, 229, 0.3);
-    }
-
-    .services-block i {
-      font-size: 3rem;
-      color: #0da6e5;
-      margin-bottom: 15px;
-      transition: all 0.3s ease;
-    }
-
-    .swiper-slide .services-block:hover i {
-      transform: scale(1.1);
-      color: #0891d1;
-    }
-
-    /* Enhanced Portfolio Cards */
-    .journal-info {
-      transition: all 0.4s ease;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-      background: white;
-    }
-
-    .journal-info:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
-    }
-
-    .Video {
-      border-radius: 12px 12px 0 0;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .Video iframe {
-      width: 100%;
-      height: 250px;
-      border: none;
-      display: block;
-    }
-
-    .journal-txt {
-      padding: 25px 20px;
-    }
-
-    .journal-txt h4 {
-      font-weight: 600;
-      margin-bottom: 12px;
-      transition: color 0.3s ease;
-    }
-
-    .journal-txt h4:hover {
-      color: #0da6e5;
-    }
-
-    /* Better Review Cards */
-    .review-block {
-      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-      border-radius: 12px;
-      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
-      padding: 30px;
-      text-align: center;
-      transition: all 0.4s ease;
-      height: 100%;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .review-block:hover {
-      transform: translateY(-5px);
-      box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.15);
-      border-color: rgba(13, 166, 229, 0.2);
-    }
-
-    .client-img {
-      width: 25%;
-      max-width: 80px;
-      height: auto;
-      border-radius: 12px;
-      margin-bottom: 15px;
-      transition: transform 0.3s ease;
-    }
-
-    .review-block:hover .client-img {
-      transform: scale(1.05);
-    }
-
-    .review-text {
-      font-size: 15px;
-      font-style: italic;
-      color: #555;
-      margin-bottom: 20px;
-      line-height: 1.7;
-      min-height: 100px;
-    }
-
-    /* Enhanced Contact Form */
-    .form-container {
-      background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-      border-radius: 15px;
-      box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.12);
-      transition: all 0.4s ease;
-      border: 1px solid rgba(0, 0, 0, 0.05);
-    }
-
-    .form-container:hover {
-      transform: translateY(-3px);
-      box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.15);
-    }
-
-    .form-control,
-    textarea {
-      border: 2px solid #e9ecef;
-      border-radius: 8px;
-      padding: 12px 15px;
-      transition: all 0.3s ease;
-    }
-
-    .form-control:focus,
-    textarea:focus {
-      border-color: #0da6e5;
-      box-shadow: 0 0 0 0.2rem rgba(13, 166, 229, 0.15);
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, #0da6e5, #0891d1);
-      border: none;
-      padding: 14px 40px;
-      border-radius: 25px;
-      font-weight: 600;
-      transition: all 0.3s ease;
-      box-shadow: 0 5px 20px rgba(13, 166, 229, 0.3);
-    }
-
-    .btn-primary:hover {
-      background: linear-gradient(135deg, #0891d1, #0da6e5);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 25px rgba(13, 166, 229, 0.4);
-    }
-
-    /* Better Footer */
-    #footer {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-      padding: 40px 0 20px;
-    }
-
-    .socials-media ul li {
-      display: inline-block;
-      margin: 0 8px;
-      transition: transform 0.3s ease;
-    }
-
-    .socials-media ul li:hover {
-      transform: translateY(-5px);
-    }
-
-    .socials-media a {
-      width: 45px;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.1);
-      transition: all 0.3s ease;
-    }
-
-    .socials-media a:hover {
-      background: #0da6e5;
-      color: white;
-    }
-
-    /* Enhanced Back to Top */
-    .back-to-top {
-      background: linear-gradient(135deg, #0da6e5, #0891d1);
-      box-shadow: 0 5px 20px rgba(13, 166, 229, 0.4);
-      transition: all 0.3s ease;
-    }
-
-    .back-to-top:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(13, 166, 229, 0.5);
-    }
-
-    /* Responsive Improvements */
-    @media (max-width: 768px) {
-      .logo {
-        font-size: 14px;
-      }
-
-      .logo img {
-        max-height: 35px;
-      }
-
-      .Video iframe {
-        height: 200px;
-      }
-
-      .services-block {
-        margin-bottom: 20px;
-      }
-
-      .review-text {
-        min-height: auto;
-        font-size: 14px;
-      }
-    }
-
-    /* Loading Performance */
-    img {
-      image-rendering: -webkit-optimize-contrast;
-    }
-
-    iframe {
-      loading: lazy;
-    }
-
-    /* Section Spacing */
-    .paddsection {
-      padding: 80px 0;
-    }
-
-    @media (max-width: 768px) {
-      .paddsection {
-        padding: 50px 0;
-      }
-    }
-
-    /* Better Typography */
-    h1, h2, h3, h4, h5, h6 {
-      font-weight: 600;
-      line-height: 1.3;
-    }
-
-    p {
-      line-height: 1.8;
-    }
-  </style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
+  <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo">
-        <img src="assets/img/logo1.png" alt="Nasir Hussain Logo" class="img-fluid">
-        <span>Nasir's Portfolio</span>
-      </a>
+
+      <a href="index.html" class="logo"><img src="assets/img/logo1.png" alt="" class="img-fluid"> Nasir's Portfolio</a>
    
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#journal">Portfolio</a></li>
+          <li><a class="nav-link  scrollto" href="#journal">Portfolio</a></li>
+         
         </ul>
         <ul>
-          <li><a class="nav-link scrollto" href="#get-in-touch">Message me!</a></li>
+           <li><a class="nav-link  scrollto" href="#get-in-touch">Message me!</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-    </div>
-  </header>
+      </nav><!-- .navbar -->
 
+    </div>
+  </header><!-- End Header -->
+<style>.fiverr-logo {
+  width: 24px;       /* Adjust to your preferred size */
+  height: 24px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover;  /* Ensures the image scales properly */
+  margin-top: -4px;
+}
+
+  .fiverr-logo {
+    transition: 0.3s ease;
+}
+
+.fiverr-logo:hover {
+    filter: invert(27%) sepia(80%) saturate(450%) hue-rotate(100deg) brightness(45%) contrast(90%);
+}
+
+</style>
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="home">
+
     <div class="container">
       <div class="hero-content">
         <h1 class="fontChange">I'm <span class="typed" data-typed-items="Nasir Hussain, a Web Developer, "></span></h1>
         <p>Turn concepts into web realities</p>
     
         <ul class="list-unstyled list-social">
-          <li><a target="_blank" href="https://www.fiverr.com/s/7Y5ZjD4" rel="noopener" aria-label="Fiverr Profile"><img class="fiverr-logo" src="/assets/img/download.png" title="my Fiverr account" alt="Fiverr Logo"></a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/" rel="noopener" title="my LinkedIn account" aria-label="LinkedIn Profile"><i class="bi bi-linkedin"></i></a></li>
-          <li><a target="_blank" href="https://github.com/NasirJamali" rel="noopener" title="my Github account" aria-label="GitHub Profile"><i class="bi bi-github"></i></a></li>
-          <li><a href="#get-in-touch" title="Get in Touch" aria-label="Contact Form"><i class="fas fa-comment-alt"></i></a></li>
+          <li><a target="_blank" href="https://www.fiverr.com/s/7Y5ZjD4"><img class="fiverr-logo" src="/assets/img/download.png" title="my Fiverr account" alt="Fiverr Logo"></a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/" title="my Linkedin account"><i class="bi bi-linkedin"></i></a></li>
+          <li><a target="_blank" href="https://github.com/NasirJamali" title="my Github account"><i class="bi bi-github"></i></a></li>
+<!--           <li><a target="_blank" href="https://www.instagram.com/nasiryouknow"><i class="bi bi-instagram"></i></a></li> -->
+          <li><a href="#get-in-touch"><i class="fas fa-comment-alt"title="Get in Touch"></i></a></li>
+          <!-- <li><a target="_blank" href="#"><img class="fiverr-logo" src="/assets/img/download.png" alt="Fiverr Logo"></a></li> -->
         </ul>
+        
+        
       </div>
     </div>
-  </div>
+  </div><!-- End Hero -->
 
   <main id="main">
 
     <!-- ======= About Section ======= -->
     <div id="about" class="paddsection">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
-          <div class="col-lg-4">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
             <div class="div-img-bg">
               <div class="about-img">
-                <img src="assets/img/about.jpeg" class="img-responsive" alt="Nasir Hussain - Web Developer" loading="lazy">
+                <img src="assets/img/about.jpeg" class="img-responsive" alt="me">
               </div>
             </div>
           </div>
 
           <div class="col-lg-7">
-            <div class="about-descr content">
+            <div class="about-descr" class="content">
               <p class="p-heading">Hi, I'm Nasir Hussain</p>
-              <p class="separator">"I'm a Full-Stack Web Developer with over 5 years of experience. During this time, I've successfully taken numerous web projects from ideas to fully polished creations. My main goal is to create the best website for you, ensuring it's not only high-quality but also perfectly aligned with your needs"</p>
+              <p class="separator">"I'm a Full-Stack Web Developer with over 5 years of experience. During this time, I've successfully taken numerous web projects from ideas to fully polished creations. My main goal is to create the best website for you, ensuring it’s not only high-quality but also perfectly aligned with your needs"</p>
         
-              <br>
-              <button class="read-more-button" onclick="toggleHiddenContent()" aria-label="Read More">
-                Read More <i class="fas fa-chevron-down"></i>
-              </button>
-              
-              <div id="hidden-content" style="display: none;">
-                <p>⚡ Front-End Development :
+                <br>
+                 <button class="read-more-button" onclick="toggleHiddenContent()">Read More <i class="fas fa-chevron-down"></i></button>
+                 <div id="hidden-content" style="display: none;">
+
+                 <p>⚡ Front-End Development :
                 <br>💠 | • Html | • Css | • JavaScript |</p>
                  
-                <p>⚡ Libraries and Frameworks
+                 <p>⚡ Libraries and Frameworks
                 <br>💠 | • Bootstrap | • Tailwind | • React |</p>
                  
-                <p>⚡ Back-End Development  :
+                 <p>⚡ Back-End Development  :
                 <br>💠 | • PHP | • Node Js | • Express Js | </p>
                 
-                <p>⚡ DataBase :
+                 <p>⚡ DataBase :
                 <br>💠 | • MySQL | • MongoDb | </p>
                 
-                <br> Throughout my journey, I've crafted numerous websites. With my passion 
-                and expertise, I have the ability to create exceptional websites that stand out. Your ideas are
-                important – I'm here to bring them to life in the best possible way. 
+             
+                
+                    <br> Throughout my journey, I've crafted numerous websites. With my passion 
+                    and expertise, I have the ability to create exceptional websites that stand out. Your ideas are
+                     important – I'm here to bring them to life in the best possible way. 
                  
-                <br>
-                <strong><br>Regards,</strong>
-                <strong><br>Nasir Hussain</strong>
-              </div>
+                    <br>
+                   <strong><br>Regards,</strong>
+                   <strong><br>Nasir Hussain</strong>
+                  </p>
+                </div>
             </div>
+
           </div>
         </div>
       </div>
-    </div>
+    </div><!-- End About Section -->
+
+    <style>
+      /* Add shadow to each slide */
+/* Add shadow to each slide */
+.swiper-slide .services-block {
+  background-color: #eef7f7;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Adjust the values to control shadow intensity and spread */
+  border-radius: 8px; /* Optional: Adds a subtle rounding of corners */
+  padding: 20px; /* Optional: Adds space inside each block for a better look */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth animation for hover effect */
+}
+
+.swiper-slide .services-block:hover {
+  transform: scale(1.05); /* Grows slightly on hover */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow on hover */
+}
+.btn-primary {
+    background-color: #0da6e5;
+   
+}
+
+.btn-primary:hover {
+    background-color: #406a94;
+    color: #f0f0f0;
+    transform: scale(1.05); /* Grows slightly on hover */
+  box-shadow: 0px 6px 20px rgba(107, 107, 107, 0.8); /* Adds a stronger shadow on hover */
+}
+
+    </style>
 
     <!-- ======= Services Section ======= -->
     <div id="services">
       <div class="container">
+
         <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
+
             <div class="swiper-slide">
               <div class="services-block">
                 <i class="fas fa-desktop"></i>
                 <span>FRONT-END DEVELOPMENT</span>
-                <p class="separator">Beautiful websites using HTML, CSS, JavaScript & Bootstrap</p>
+                <p class="separator"> "Beautiful websites using HTML, CSS, JavaScript & Bootstrap" </p>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="services-block">
                 <i class="fas fa-window-restore"></i>
                 <span>BACK-END DEVELOPMENT</span>
-                <p class="separator">In back-end development, I'm armed with PHP & Node.js</p>
+                <p class="separator">"In back-end development, I'm armed with PHP & Node.js " </p>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="services-block">
                 <i class="fas fa-server"></i>
                 <span>DATABASE DEVELOPMENT</span>
-                <p class="separator">In the world of databases, my top choices are MySQL and MongoDB</p>
+                <p class="separator">"In the world of databases, my top choices are MySQl and MongoDB"</p>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
 
             <div class="swiper-slide">
               <div class="services-block">
                 <i class="fas fa-laptop-code"></i>
                 <span>UPGRADING YOUR WEBSITE</span>
-                <p class="separator">Let's sprinkle some magic on your website with exciting new features!</p>
+                <p class="separator">"Let's sprinkle some magic on your website with exciting new features!"</p>
               </div>
-            </div>
+            </div><!-- End testimonial item -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
       </div>
-    </div>
+    </div><!-- End Services Section -->
 
     <!-- ======= Journal Section ======= -->
     <div id="journal" class="text-left paddsection">
@@ -628,182 +268,306 @@
 
       <div class="container">
         <div class="journal-block">
-          <div class="row g-4">
+          <div class="row">
+
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
+
                 <div class="Video">
-                  <a href="blog-single.html">
-                    <iframe src="https://www.youtube.com/embed/vOuRZuVR30M?si=QabBy8KuhmxRyoN1" title="Tesla Clone Website Demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </a>
+                  <a href="blog-single.html"><iframe width="560" height="315" src="https://www.youtube.com/embed/vOuRZuVR30M?si=QabBy8KuhmxRyoN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
                 </div>
                 
                 <div class="journal-txt">
+
                   <h4><a href="blog-single.html">TESLA CLONE WEBSITE</a></h4>
-                  <p class="separator">Crafted using HTML, CSS, and JavaScript, no front-end frameworks required</p>
-                  <p><a href="blog-single.html"><strong>Read More...</strong></a></p>
+                  <p class="separator">Crafted using HTML, CSS, and JavaScript, no front-end frameworks required </p>
+                 <p><a href="blog-single"><strong>Read More...</strong></a></p> 
+                 
+
                 </div>
+
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
+
                 <div class="Video">
-                  <a href="blog-single 2.html">
-                    <iframe src="https://www.youtube.com/embed/ICDOiPI26hY?si=rqiEI33Xd0-bUBj9" title="Travel Agency Website Demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </a>
+                  <a href="blog-single 2.html"><iframe width="560" height="315" src="https://www.youtube.com/embed/ICDOiPI26hY?si=rqiEI33Xd0-bUBj9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
                 </div>
 
+               
+
                 <div class="journal-txt">
+
                   <h4><a href="blog-single 2.html">TRAVEL AGENCY WEBSITE</a></h4>
-                  <p class="separator">Made with the magic of HTML, CSS, JavaScript & Bootstrap</p>
-                  <p><a href="blog-single 2.html"><strong>Read More...</strong></a></p>
+                  <p class="separator">Made with the magic of HTML, CSS, JavaScript & Bootstrap  </p>
+                  <p><a href="blog-single 2.html"><strong>Read More...</strong></a></p> 
+
                 </div>
+
               </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
               <div class="journal-info">
+
                 <div class="Video">
-                  <a href="blog-single 3.html">
-                    <iframe src="https://www.youtube.com/embed/lCCWs1DIQSM?si=XUWzIaD4OBYs0BmR" title="OTT Movies Website Demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </a>
+                  <a href="blog-single 3.html"><iframe width="560" height="315" src="https://www.youtube.com/embed/lCCWs1DIQSM?si=XUWzIaD4OBYs0BmR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></a>
                 </div>
 
+               
+
                 <div class="journal-txt">
+
                   <h4><a href="blog-single 3.html">OTT MOVIES WEBSITE</a></h4>
-                  <p class="separator">Made With Pure HTML, CSS, and JavaScript, alongside the power of Node.js and Express</p>
-                  <p><a href="blog-single 3.html"><strong>Read More...</strong></a></p>
+                  <p class="separator">Made With Pure HTML, CSS, and JavaScript, alongside the power of Node.js and Express </p>
+                  <p><a href="blog-single 3.html"><strong>Read More...</strong></a></p> 
+
                 </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </div>
+
+    </div><!-- End Journal Section -->
+
+
+      <!-- ======= Reviews Section ======= -->
+<div id="reviews" class="paddsection">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>What My Clients Say</h2>
+      <p class="separator">Check out what my clients think about my work.</p>
     </div>
 
-    <!-- ======= Reviews Section ======= -->
-    <div id="reviews" class="paddsection">
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>What My Clients Say</h2>
-          <p class="separator">Check out what my clients think about my work.</p>
+    <div class="reviews-slider swiper" data-aos="fade-up" data-aos-delay="100">
+      <div class="swiper-wrapper">
+        <!-- Review 1 -->
+        <div class="swiper-slide">
+          <div class="review-block">
+            <img src="assets/img/logofiver.png" class="client-img" alt="Client 1 Website Image">
+            <p class="review-text">"Nasir delivered an exceptional website for our business. The design was exactly what we envisioned, and the functionality works flawlessly."</p>
+            <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
+            <h6 class="client-name">@peachesestrada</h6>
+            <p class="client-company">Fiverr.</p>
+          </div>
         </div>
+        
+        <!-- Review 2 -->
+        <div class="swiper-slide">
+          <div class="review-block">
+            <img src="assets/img/logoupwork.png" class="client-img" alt="Client 2 Website Image">
+            <p class="review-text">"Nasir was great to work with. I had him clone a website, 1:1 and he did a great job, lot of attention to detail. I had a few small issues uploading it to my shared hosting plan, and Nasir jumped in and sorted everything out very quickly. This is the kind of service and commitment to the client that Upwork needs more of! Will 100% be working with him again!"</p>
+            <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
+            <h6 class="client-name">@GregoryYoung</h6>
+            <p class="client-company">Upwork.</p>
+          </div>
+        </div>
+        
+        <!-- Review 3 -->
+        <div class="swiper-slide">
+          <div class="review-block">
+            <img src="assets/img/logofiver.png" class="client-img" alt="Client 3 Website Image">
+            <p class="review-text">"Was amazing. Started before the order to make sure he could complete the task and managed to get the functionality done. Then placed the Oder and only took a day to get 90% of it completed, ran into a few problems but was solved very fast and now my site works perfectly"</p>
+            <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
+            <h6 class="client-name">@aidenw_2210</h6>
+            <p class="client-company">Fiverr.</p>
+          </div>
+        </div>
+          <!-- Review 2 -->
+          <div class="swiper-slide">
+            <div class="review-block">
+              <img src="assets/img/logoupwork.png" class="client-img" alt="Client 2 Website Image">
+              <p class="review-text">"Nasir is great, he created a Portfolio website for me in that low budget, and the website was way better then i expect, highly recommended Freelancer."</p>
+              <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
+              <h6 class="client-name">@RehanAhmed</h6>
+              <p class="client-company">Upwork.</p>
+            </div>
+          </div>
 
-        <div class="reviews-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
+            <!-- Review 2 -->
             <div class="swiper-slide">
               <div class="review-block">
-                <img src="assets/img/logofiver.png" class="client-img" alt="Fiverr Logo" loading="lazy">
-                <p class="review-text">"Nasir delivered an exceptional website for our business. The design was exactly what we envisioned, and the functionality works flawlessly."</p>
-                <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-                <h6 class="client-name">@peachesestrada</h6>
-                <p class="client-company">Fiverr.</p>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <div class="review-block">
-                <img src="assets/img/logoupwork.png" class="client-img" alt="Upwork Logo" loading="lazy">
-                <p class="review-text">"Nasir was great to work with. I had him clone a website, 1:1 and he did a great job, lot of attention to detail. Will 100% be working with him again!"</p>
-                <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-                <h6 class="client-name">@GregoryYoung</h6>
-                <p class="client-company">Upwork.</p>
-              </div>
-            </div>
-            
-            <div class="swiper-slide">
-              <div class="review-block">
-                <img src="assets/img/logofiver.png" class="client-img" alt="Fiverr Logo" loading="lazy">
-                <p class="review-text">"Was amazing. Started before the order to make sure he could complete the task and managed to get the functionality done. Now my site works perfectly!"</p>
-                <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-                <h6 class="client-name">@aidenw_2210</h6>
-                <p class="client-company">Fiverr.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="review-block">
-                <img src="assets/img/logoupwork.png" class="client-img" alt="Upwork Logo" loading="lazy">
-                <p class="review-text">"Nasir is great, he created a Portfolio website for me in that low budget, and the website was way better than I expected, highly recommended Freelancer."</p>
-                <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-                <h6 class="client-name">@RehanAhmed</h6>
-                <p class="client-company">Upwork.</p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="review-block">
-                <img src="assets/img/logofiver.png" class="client-img" alt="Fiverr Logo" loading="lazy">
+                <img src="assets/img/logofiver.png" class="client-img" alt="Client 2 Website Image">
                 <p class="review-text">"Great to work with, cares about the product more so than the money."</p>
                 <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
                 <h6 class="client-name">@echiti9</h6>
                 <p class="client-company">Fiverr.</p>
               </div>
-            </div>NHContinue<div class="swiper-slide">
-              <div class="review-block">
-                <img src="assets/img/logofiver.png" class="client-img" alt="Fiverr Logo" loading="lazy">
-                <p class="review-text">"He went above and beyond to make sure he ticked everything off my bucket list. He understood all my wants and needs and orchestrated the project perfectly. Defo recommend to everyone!"</p>
-                <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
-                <h6 class="client-name">@shaha8</h6>
-                <p class="client-company">Fiverr.</p>
-              </div>
             </div>
+        <!-- Review 4 -->
+        <div class="swiper-slide">
+          <div class="review-block">
+            <img src="assets/img/logofiver.png" class="client-img" alt="Client 4 Website Image">
+            <p class="review-text">"
+              He went above and beyond to make sure he ticked everything off my bucket list. He understood all my wants and needs and orchestrated the project perfectly. He did not miss a single thing. Defo recommend to everyone!"</p>
+            <h6 class="client-name">⭐⭐⭐⭐⭐5</h6>
+            <h6 class="client-name">@shaha8</h6>
+            <p class="client-company">Fiverr.</p>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
       </div>
+      <!-- Add pagination for the slider -->
+      <div class="swiper-pagination"></div>
     </div>
+  </div>
+</div><!-- End Reviews Section -->
+
+<!-- Add the necessary swiper CSS and JS if not included already -->
+<link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  const swiper = new Swiper('.reviews-slider', {
+    loop: true, // Enables the loop for continuous sliding
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 3000, // 3 seconds delay between slides
+      disableOnInteraction: false, // Keeps autoplay active even after user interaction
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
+  });
+</script>
+
+<!-- Styles for the review section -->
+<style>
+  .review-block {
+    background-color: #f3f3f3;;
+    border-radius: 8px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .client-img {
+    width: 30%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1px;
+  }
+
+  .review-text {
+    font-size: 16px;
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+  }
+
+  .client-name {
+    font-weight: bold;
+    color: #333;
+  }
+
+  .client-company {
+    color: #777;
+    font-size: 14px;
+  }
+
+  .swiper-pagination {
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+
+    
+    
 <!-- ======= Contact Form Section ======= -->
 <section id="get-in-touch">
-  <div class="container py-5">
-    <h1 class="h1 text-center mb-4 text-primary">GET IN TOUCH</h1>
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10">
-        <div class="form-container p-4">
-          <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="e5284c8b-48a8-46e0-b8a5-f6880ad11616">
-            <input type="hidden" name="subject" value="New Contact from nasirweb.online">
+<div class="container py-5">
+  <h1 class="h1 text-center mb-4 text-primary">GET IN TOUCH</h1>
+  <div class="row justify-content-center">
+    <div class="col-lg-8 col-md-10">
+      <div class="form-container shadow-sm p-4 bg-light">
+        <form id="myForm" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="e5284c8b-48a8-46e0-b8a5-f6880ad11616">
 
-            <div class="mb-3">
-              <label for="name" class="form-label">Your Name</label>
-              <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required>
-            </div>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input class="form-control" type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
 
-            <div class="mb-3">
-              <label for="email" class="form-label">Your Email</label>
-              <input class="form-control" type="email" id="email" name="email" placeholder="Your Email" required>
-            </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input class="form-control" type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
 
-            <div class="mb-3">
-              <label for="message" class="form-label">Your Message</label>
-              <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-            </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
 
-            <div class="text-center">
-              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-            </div>
-          </form>
-        </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+</div><!-- End Contact Form Section -->
 </section>
-  </main>
+<style>
+
+
+  /* Add a box with a light black shadow around the form */
+  .form-container {
+    background-color: white; /* White background for the box */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Light black shadow */
+  }
+
+  .form-container:hover{
+   
+    transform: scale(1.01); /* Grows slightly on hover */
+ 
+}
+  
+</style>
+
+  
+  </main><!-- End #main -->
+  
+
   <!-- ======= Footer ======= -->
   <div id="footer" class="text-center">
     <div class="container">
       <div class="socials-media text-center">
+
         <ul class="list-unstyled">
-          <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a></li>
-          <li><a target="_blank" href="https://github.com/NasirJamali" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a></li>
-          <li><a target="_blank" href="https://www.instagram.com/nasiryouknow" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a></li>
-          <li><a href="#get-in-touch" aria-label="Contact"><i class="fas fa-comment-alt"></i></a></li>
-        </ul>
+          <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/"><i class="bi bi-linkedin"></i>
+            <li><a target="_blank" href="https://github.com/NasirJamali"><i class="bi bi-github"></i></a></li>
+            <!-- <li><a target="_blank" href="https://www.facebook.com/nasirhussain888"><i class="bi bi-facebook"></i></a></li> -->
+            <li><a target="_blank" href="https://www.instagram.com/nasiryouknow"><i class="bi bi-instagram"></i></a></li>
+            <li> <a href="#get-in-touch"><i  class="fas fa-comment-alt"></i></a></li>
+          </ul>
+
       </div>
-  <p>&copy; 2024 Nasir Hussain. All rights reserved | nasirhere678@gmail.com</p>
-</div>
-  </div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to Top"><i class="bi bi-arrow-up-short"></i></a>
+
+      <p>&copy; Copyrights by nasirhere678@gmail.com</p>
+     
+    </div>
+  </div><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+
+  
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -811,56 +575,24 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script>
-    // Toggle Hidden Content
-    function toggleHiddenContent() {
-      var hiddenContent = document.getElementById('hidden-content');
-      var readMoreButton = document.querySelector('.read-more-button');
-      var icon = readMoreButton.querySelector('i');
+  function toggleHiddenContent() {
+    var hiddenContent = document.getElementById('hidden-content');
+    var readMoreButton = document.querySelector('.read-more-button');
   
-      if (hiddenContent.style.display === 'none') {
-        hiddenContent.style.display = 'block';
-        readMoreButton.innerHTML = 'Show Less <i class="fas fa-chevron-up"></i>';
-      } else {
-        hiddenContent.style.display = 'none';
-        readMoreButton.innerHTML = 'Read More <i class="fas fa-chevron-down"></i>';
-      }
+    if (hiddenContent.style.display === 'none') {
+      hiddenContent.style.display = 'block';
+      readMoreButton.textContent = 'As a Developer i use following technologies';
+    } else {
+      hiddenContent.style.display = 'none';
+      readMoreButton.textContent = 'Read More';
     }
-
-    // Reviews Swiper
-    const reviewsSwiper = new Swiper('.reviews-slider', {
-      loop: true,
-      slidesPerView: 1,
-      spaceBetween: 30,
-      autoplay: {
-        delay: 3500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      breakpoints: {
-        768: {
-          slidesPerView: 2,
-        },
-        1024: {
-          slidesPerView: 3,
-        },
-      },
-    });
-
-    // Header Scroll Effect
-    window.addEventListener('scroll', function() {
-      const header = document.getElementById('header');
-      if (window.scrollY > 50) {
-        header.classList.add('header-scrolled');
-      } else {
-        header.classList.remove('header-scrolled');
-      }
-    });
+  }
   </script>
+  
 </body>
+
 </html>
