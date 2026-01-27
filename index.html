@@ -11,21 +11,21 @@
   <!-- SEO Meta Tags -->
   <meta name="description" content="Nasir Hussain's portfolio showcasing web development expertise in front-end, back-end, and database technologies. Professional web development projects and skills.">
   <meta name="keywords" content="Nasir Hussain, web developer, portfolio, front-end development, back-end development, HTML, CSS, JavaScript, Node.js, MongoDB">
-  <link rel="canonical" href="https://nasirweb.online">
+  <link rel="canonical" href="https://nasirweb.site">
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Open Graph Meta Tags (For Social Media Sharing) -->
   <meta property="og:title" content="Nasir Hussain's Portfolio">
   <meta property="og:description" content="Explore the professional portfolio of Nasir Hussain, a skilled web developer with expertise in both front-end and back-end development.">
-  <meta property="og:image" content="https://nasirweb.online/assets/img/logo1.png"> <!-- Update with actual image URL -->
-  <meta property="og:url" content="https://nasirweb.online">
+  <meta property="og:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
+  <meta property="og:url" content="https://nasirweb.site">
   <meta property="og:type" content="website">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nasir Hussain's Portfolio">
   <meta name="twitter:description" content="Discover the web development projects and skills of Nasir Hussain, a full-stack developer specializing in responsive and engaging websites.">
-  <meta name="twitter:image" content="https://nasirweb.online/assets/img/logo1.png"> <!-- Update with actual image URL -->
+  <meta name="twitter:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
   
   <!-- Schema.org Markup for Person -->
   <script type="application/ld+json">
@@ -34,7 +34,7 @@
     "@type": "Person",
     "name": "Nasir Hussain",
     "jobTitle": "Full-Stack Web Developer",
-    "url": "https://nasirweb.online",
+    "url": "https://nasirweb.site",
     "sameAs": [
       "https://www.linkedin.com/in/nasirhussaindev/",
       "https://github.com/NasirJamali",
@@ -70,7 +70,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
-    /* WhatsApp-style Bottom Navbar - Mobile Only - UPDATED FOR GLASS EFFECT */
+    /* WhatsApp-style Bottom Navbar - Mobile Only */
     .mobile-bottom-nav {
       position: fixed;
       bottom: 20px;
@@ -78,14 +78,14 @@
       transform: translateX(-50%) translateY(100px);
       width: 90%;
       max-width: 400px;
-      background: rgba(255, 255, 255, 0.1); /* Same as top navbar - very light transparent */
-      backdrop-filter: blur(12px); /* Same blur as top navbar */
-      -webkit-backdrop-filter: blur(12px);
+      background: rgba(255, 255, 255, 0.85); /* More transparent for glass effect */
+      backdrop-filter: blur(15px); /* Increased blur for better glass effect */
+      -webkit-backdrop-filter: blur(15px);
       border-radius: 25px;
       padding: 12px;
       z-index: 999;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.2); /* Same border as top navbar */
+      border: 1px solid rgba(255, 255, 255, 0.4); /* Lighter border for glass effect */
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       opacity: 0;
     }
@@ -111,26 +111,24 @@
       flex-direction: column;
       align-items: center;
       text-decoration: none;
-      color: rgb(0, 0, 0); /* White text like top navbar */
+      color: #333;
       font-size: 11px;
       padding: 8px 10px;
       border-radius: 15px;
       transition: all 0.3s ease;
       flex: 1;
       text-align: center;
-      text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Same text shadow as top navbar */
     }
     
     .mobile-nav-item i {
       font-size: 18px;
       margin-bottom: 4px;
-      color: rgb(0, 0, 0);
     }
     
     .mobile-nav-item.active,
     .mobile-nav-item:hover {
-      background: rgba(13, 166, 229, 0.3); /* More visible on glass background */
-      color: white;
+      background: rgba(13, 166, 229, 0.15);
+      color: #0da6e5;
     }
     
     /* Fiverr Badge - Updated with award icon and "5*" */
@@ -280,15 +278,6 @@
       
       #header .logo img {
         height: 30px;
-      }
-      
-      /* Make bottom navbar text more visible on very small screens */
-      .mobile-nav-item {
-        font-size: 10px;
-      }
-      
-      .mobile-nav-item i {
-        font-size: 16px;
       }
     }
     
