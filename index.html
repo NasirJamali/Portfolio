@@ -11,21 +11,21 @@
   <!-- SEO Meta Tags -->
   <meta name="description" content="Nasir Hussain's portfolio showcasing web development expertise in front-end, back-end, and database technologies. Professional web development projects and skills.">
   <meta name="keywords" content="Nasir Hussain, web developer, portfolio, front-end development, back-end development, HTML, CSS, JavaScript, Node.js, MongoDB">
-  <link rel="canonical" href="https://nasirweb.site">
+  <link rel="canonical" href="https://nasirweb.online">
   <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Open Graph Meta Tags (For Social Media Sharing) -->
   <meta property="og:title" content="Nasir Hussain's Portfolio">
   <meta property="og:description" content="Explore the professional portfolio of Nasir Hussain, a skilled web developer with expertise in both front-end and back-end development.">
-  <meta property="og:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
-  <meta property="og:url" content="https://nasirweb.site">
+  <meta property="og:image" content="https://nasirweb.online/assets/img/logo1.png"> <!-- Update with actual image URL -->
+  <meta property="og:url" content="https://nasirweb.online">
   <meta property="og:type" content="website">
   
   <!-- Twitter Card Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Nasir Hussain's Portfolio">
   <meta name="twitter:description" content="Discover the web development projects and skills of Nasir Hussain, a full-stack developer specializing in responsive and engaging websites.">
-  <meta name="twitter:image" content="https://nasirweb.site/assets/img/logo1.png"> <!-- Update with actual image URL -->
+  <meta name="twitter:image" content="https://nasirweb.online/assets/img/logo1.png"> <!-- Update with actual image URL -->
   
   <!-- Schema.org Markup for Person -->
   <script type="application/ld+json">
@@ -34,7 +34,7 @@
     "@type": "Person",
     "name": "Nasir Hussain",
     "jobTitle": "Full-Stack Web Developer",
-    "url": "https://nasirweb.site",
+    "url": "https://nasirweb.online",
     "sameAs": [
       "https://www.linkedin.com/in/nasirhussaindev/",
       "https://github.com/NasirJamali",
@@ -70,7 +70,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <style>
-    /* WhatsApp-style Bottom Navbar - Mobile Only */
+    /* WhatsApp-style Bottom Navbar - Mobile Only - UPDATED FOR GLASS EFFECT */
     .mobile-bottom-nav {
       position: fixed;
       bottom: 20px;
@@ -78,14 +78,14 @@
       transform: translateX(-50%) translateY(100px);
       width: 90%;
       max-width: 400px;
-      background: rgba(255, 255, 255, 0.95);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
+      background: rgba(255, 255, 255, 0.1); /* Same as top navbar - very light transparent */
+      backdrop-filter: blur(12px); /* Same blur as top navbar */
+      -webkit-backdrop-filter: blur(12px);
       border-radius: 25px;
       padding: 12px;
       z-index: 999;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.2); /* Same border as top navbar */
       transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       opacity: 0;
     }
@@ -111,24 +111,26 @@
       flex-direction: column;
       align-items: center;
       text-decoration: none;
-      color: #333;
+      color: rgb(0, 0, 0); /* White text like top navbar */
       font-size: 11px;
       padding: 8px 10px;
       border-radius: 15px;
       transition: all 0.3s ease;
       flex: 1;
       text-align: center;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Same text shadow as top navbar */
     }
     
     .mobile-nav-item i {
       font-size: 18px;
       margin-bottom: 4px;
+      color: rgb(0, 0, 0);
     }
     
     .mobile-nav-item.active,
     .mobile-nav-item:hover {
-      background: rgba(13, 166, 229, 0.15);
-      color: #0da6e5;
+      background: rgba(13, 166, 229, 0.3); /* More visible on glass background */
+      color: white;
     }
     
     /* Fiverr Badge - Updated with award icon and "5*" */
@@ -180,7 +182,7 @@
       font-size: 13px;
     }
     
-    /* Top navbar - Fully transparent with centered logo */
+    /* Top navbar - Glassy background with blur */
     #header {
       position: fixed;
       top: 0;
@@ -188,10 +190,10 @@
       right: 0;
       z-index: 1000;
       transition: all 0.3s ease;
-      background: transparent;
-      backdrop-filter: none;
-      -webkit-backdrop-filter: none;
-      box-shadow: none;
+      background: rgba(255, 255, 255, 0.1); /* Very light transparent */
+      backdrop-filter: blur(12px); /* Glass blur effect */
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
       height: 60px;
       display: flex;
       align-items: center;
@@ -278,6 +280,15 @@
       
       #header .logo img {
         height: 30px;
+      }
+      
+      /* Make bottom navbar text more visible on very small screens */
+      .mobile-nav-item {
+        font-size: 10px;
+      }
+      
+      .mobile-nav-item i {
+        font-size: 16px;
       }
     }
     
@@ -814,7 +825,7 @@
     </div>
   </div><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> -->
 
 
   
@@ -842,7 +853,7 @@
     }
   }
   
-  // Navbar scroll behavior - SIMPLIFIED VERSION
+  // Navbar scroll behavior - UPDATED FOR DESKTOP TOO
   document.addEventListener('DOMContentLoaded', function() {
     const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
     const mobileBottomNav = document.getElementById('mobileNav');
@@ -858,9 +869,7 @@
       isMobile = window.innerWidth <= 768;
       
       if (!isMobile) {
-        // Desktop - always show top navbar, hide bottom navbar
-        topHeader.classList.remove('scrolled-down');
-        topHeader.classList.add('scrolled-up');
+        // Desktop - hide bottom navbar
         mobileBottomNav.classList.remove('active');
         mobileBottomNav.classList.add('hidden');
       } else {
@@ -872,10 +881,8 @@
       }
     }
     
-    // Handle scroll behavior - SIMPLIFIED
+    // Handle scroll behavior - WORKS FOR BOTH DESKTOP AND MOBILE
     function handleScroll() {
-      if (!isMobile) return;
-      
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
       const windowHeight = window.innerHeight;
       const footerTop = footer.offsetTop;
@@ -883,35 +890,51 @@
       // Check if we're near the top
       isAtTop = scrollTop < 50;
       
-      // Check if user is near the footer
-      const isNearFooter = scrollTop + windowHeight >= footerTop - 100;
-      
-      if (isNearFooter) {
-        // Near footer - hide bottom navbar
-        mobileBottomNav.classList.remove('active');
-        mobileBottomNav.classList.add('hidden');
-      } else {
-        // Not near footer
-        if (scrollTop > lastScrollTop) {
-          // SCROLLING DOWN - hide top, show bottom
-          topHeader.classList.remove('scrolled-up');
-          topHeader.classList.add('scrolled-down');
-          mobileBottomNav.classList.remove('hidden');
-          mobileBottomNav.classList.add('active');
+      if (isMobile) {
+        // MOBILE BEHAVIOR
+        // Check if user is near the footer
+        const isNearFooter = scrollTop + windowHeight >= footerTop - 100;
+        
+        if (isNearFooter) {
+          // Near footer - hide bottom navbar
+          mobileBottomNav.classList.remove('active');
+          mobileBottomNav.classList.add('hidden');
         } else {
-          // SCROLLING UP
-          if (scrollTop > 50) {
-            // Not at top - hide top, show bottom (when scrolling up from anywhere)
+          // Not near footer
+          if (scrollTop > lastScrollTop) {
+            // SCROLLING DOWN - hide top, show bottom
             topHeader.classList.remove('scrolled-up');
             topHeader.classList.add('scrolled-down');
             mobileBottomNav.classList.remove('hidden');
             mobileBottomNav.classList.add('active');
           } else {
-            // At top - show top, hide bottom
+            // SCROLLING UP
+            if (scrollTop > 50) {
+              // Not at top - hide top, show bottom (when scrolling up from anywhere)
+              topHeader.classList.remove('scrolled-up');
+              topHeader.classList.add('scrolled-down');
+              mobileBottomNav.classList.remove('hidden');
+              mobileBottomNav.classList.add('active');
+            } else {
+              // At top - show top, hide bottom
+              topHeader.classList.remove('scrolled-down');
+              topHeader.classList.add('scrolled-up');
+              mobileBottomNav.classList.remove('active');
+              mobileBottomNav.classList.add('hidden');
+            }
+          }
+        }
+      } else {
+        // DESKTOP BEHAVIOR - top navbar hides on scroll too
+        if (scrollTop > lastScrollTop && scrollTop > 100) {
+          // SCROLLING DOWN - hide top navbar
+          topHeader.classList.remove('scrolled-up');
+          topHeader.classList.add('scrolled-down');
+        } else {
+          // SCROLLING UP - show top navbar
+          if (scrollTop <= 50) {
             topHeader.classList.remove('scrolled-down');
             topHeader.classList.add('scrolled-up');
-            mobileBottomNav.classList.remove('active');
-            mobileBottomNav.classList.add('hidden');
           }
         }
       }
