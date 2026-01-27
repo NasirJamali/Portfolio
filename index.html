@@ -55,6 +55,8 @@
 
   <!-- Google Fonts -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- Add Font Awesome for award icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
 
@@ -67,51 +69,292 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+    /* WhatsApp-style Bottom Navbar - Mobile Only */
+    .mobile-bottom-nav {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      width: 90%;
+      max-width: 400px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-radius: 25px;
+      padding: 12px;
+      z-index: 999;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      opacity: 0;
+    }
+    
+    .mobile-bottom-nav.active {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+    
+    .mobile-bottom-nav.hidden {
+      transform: translateX(-50%) translateY(100px);
+      opacity: 0;
+    }
+    
+    .mobile-nav-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    
+    .mobile-nav-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: #333;
+      font-size: 11px;
+      padding: 8px 10px;
+      border-radius: 15px;
+      transition: all 0.3s ease;
+      flex: 1;
+      text-align: center;
+    }
+    
+    .mobile-nav-item i {
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+    
+    .mobile-nav-item.active,
+    .mobile-nav-item:hover {
+      background: rgba(13, 166, 229, 0.15);
+      color: #0da6e5;
+    }
+    
+    /* Fiverr Badge - Updated with award icon and "5*" */
+    .fiverr-mini-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(29, 191, 115, 0.1);
+      border: 1px solid rgba(29, 191, 115, 0.2);
+      border-radius: 20px;
+      padding: 5px 11px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 3px 10px rgba(29, 191, 115, 0.08);
+      margin-top: 15px;
+      max-width: 156px;
+    }
+    
+    .fiverr-mini-badge:hover {
+      background: rgba(29, 191, 115, 0.15);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(29, 191, 115, 0.12);
+      border-color: rgba(29, 191, 115, 0.3);
+    }
+    
+    .fiverr-award {
+      color: #1dbf73;
+      font-size: 16px;
+    }
+    
+    .fiverr-mini-level {
+      background: linear-gradient(135deg, #1dbf73 0%, #19a463 100%);
+      color: white;
+      padding: 4px 10px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: bold;
+    }
+    
+    .fiverr-text {
+      color: #333;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    
+    .fiverr-rating {
+      color: #FFD700;
+      font-weight: bold;
+      font-size: 13px;
+    }
+    
+    /* Top navbar - Fully transparent with centered logo */
+    #header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      transition: all 0.3s ease;
+      background: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      box-shadow: none;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateY(0);
+    }
+    
+    #header.scrolled-up {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    
+    #header.scrolled-down {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    
+    #header .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+    
+    #header .logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+    
+    #header .logo img {
+      height: 40px;
+      margin-right: 10px;
+      filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
+    }
+    
+    /* Hide the original navbar menu */
+    #navbar {
+      display: none !important;
+    }
+    
+    /* Mobile bottom navbar only */
+    @media (max-width: 768px) {
+      .mobile-bottom-nav {
+        display: block;
+      }
+      
+      /* Make hero text smaller on mobile */
+      #hero h1 {
+        font-size: 2.2rem !important;
+      }
+      
+      #hero h1 .typed {
+        font-size: 2.2rem !important;
+      }
+      
+      /* Make top navbar logo smaller on mobile */
+      #header .logo {
+        font-size: 1rem;
+      }
+      
+      #header .logo img {
+        height: 35px;
+      }
+    }
+    
+    @media (max-width: 576px) {
+      #hero h1 {
+        font-size: 1.8rem !important;
+      }
+      
+      #hero h1 .typed {
+        font-size: 1.8rem !important;
+      }
+      
+      #header .logo {
+        font-size: 0.9rem;
+      }
+      
+      #header .logo img {
+        height: 30px;
+      }
+    }
+    
+    @media (min-width: 769px) {
+      .mobile-bottom-nav {
+        display: none;
+      }
+    }
+    
+    /* Back to top button */
+    .back-to-top {
+      transition: all 0.4s ease;
+    }
+    
+    /* Original styles - kept as is */
+    .fiverr-logo {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: -4px;
+      transition: 0.3s ease;
+    }
+
+    .fiverr-logo:hover {
+      filter: invert(27%) sepia(80%) saturate(450%) hue-rotate(100deg) brightness(45%) contrast(90%);
+    }
+    
+    /* Make hero text stay in one line */
+    #hero h1 {
+      font-size: 2.5rem;
+      line-height: 1.2;
+    }
+    
+    #hero h1 .typed {
+      font-size: 2.5rem;
+      white-space: nowrap;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <a href="index.html" class="logo"><img src="assets/img/logo1.png" alt="" class="img-fluid"> Nasir's Portfolio</a>
-   
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link  scrollto" href="#journal">Portfolio</a></li>
-         
-        </ul>
-        <ul>
-           <li><a class="nav-link  scrollto" href="#get-in-touch">Message me!</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+  <!-- ======= Header - Centered Logo Only ======= -->
+  <header id="header" class="scrolled-up">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/img/logo1.png" alt="Nasir's Portfolio" class="img-fluid">
+        <span>Nasir's Portfolio</span>
+      </a>
     </div>
   </header><!-- End Header -->
-<style>.fiverr-logo {
-  width: 24px;       /* Adjust to your preferred size */
-  height: 24px;
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: cover;  /* Ensures the image scales properly */
-  margin-top: -4px;
-}
 
-  .fiverr-logo {
-    transition: 0.3s ease;
-}
+  <!-- ======= Mobile Bottom Navbar ======= -->
+  <div class="mobile-bottom-nav hidden" id="mobileNav">
+    <div class="mobile-nav-container">
+      <a href="#hero" class="mobile-nav-item active">
+        <i class="bi bi-house"></i>
+        <span>Home</span>
+      </a>
+      <a href="#about" class="mobile-nav-item">
+        <i class="bi bi-person"></i>
+        <span>About</span>
+      </a>
+      <a href="#journal" class="mobile-nav-item">
+        <i class="bi bi-briefcase"></i>
+        <span>Portfolio</span>
+      </a>
+      <a href="#get-in-touch" class="mobile-nav-item">
+        <i class="bi bi-chat"></i>
+        <span>Contact</span>
+      </a>
+    </div>
+  </div>
 
-.fiverr-logo:hover {
-    filter: invert(27%) sepia(80%) saturate(450%) hue-rotate(100deg) brightness(45%) contrast(90%);
-}
-
-</style>
   <!-- ======= Hero Section ======= -->
   <div id="hero" class="home">
-
     <div class="container">
       <div class="hero-content">
         <h1 class="fontChange">I'm <span class="typed" data-typed-items="Nasir Hussain, a Web Developer, "></span></h1>
@@ -121,11 +364,18 @@
           <li><a target="_blank" href="https://www.fiverr.com/s/7Y5ZjD4"><img class="fiverr-logo" src="/assets/img/download.png" title="my Fiverr account" alt="Fiverr Logo"></a></li>
           <li><a target="_blank" href="https://www.linkedin.com/in/nasirhussaindev/" title="my Linkedin account"><i class="bi bi-linkedin"></i></a></li>
           <li><a target="_blank" href="https://github.com/NasirJamali" title="my Github account"><i class="bi bi-github"></i></a></li>
-<!--           <li><a target="_blank" href="https://www.instagram.com/nasiryouknow"><i class="bi bi-instagram"></i></a></li> -->
           <li><a href="#get-in-touch"><i class="fas fa-comment-alt"title="Get in Touch"></i></a></li>
-          <!-- <li><a target="_blank" href="#"><img class="fiverr-logo" src="/assets/img/download.png" alt="Fiverr Logo"></a></li> -->
         </ul>
         
+        <!-- Fiverr Mini Badge - Updated with award icon and "5*" -->
+        <a href="https://www.fiverr.com/s/7Y5ZjD4" target="_blank" class="fiverr-mini-badge" title="Level 2 Seller on Fiverr">
+        
+          
+          <span class="fiverr-mini-level">Fiverr</span>
+            <span class="fiverr-rating"> Level 2</i></span>
+          <i class="fas fa-award fiverr-award"></i>
+        
+        </a>
         
       </div>
     </div>
@@ -149,7 +399,7 @@
           <div class="col-lg-7">
             <div class="about-descr" class="content">
               <p class="p-heading">Hi, I'm Nasir Hussain</p>
-              <p class="separator">"I'm a Full-Stack Web Developer with over 5 years of experience. During this time, I've successfully taken numerous web projects from ideas to fully polished creations. My main goal is to create the best website for you, ensuring it’s not only high-quality but also perfectly aligned with your needs"</p>
+              <p class="separator">"I'm a Full-Stack Web Developer with over 5 years of experience. During this time, I've successfully taken numerous web projects from ideas to fully polished creations. My main goal is to create the best website for you, ensuring it's not only high-quality but also perfectly aligned with your needs"</p>
         
                 <br>
                  <button class="read-more-button" onclick="toggleHiddenContent()">Read More <i class="fas fa-chevron-down"></i></button>
@@ -591,6 +841,146 @@
       readMoreButton.textContent = 'Read More';
     }
   }
+  
+  // Navbar scroll behavior - SIMPLIFIED VERSION
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileNavItems = document.querySelectorAll('.mobile-nav-item');
+    const mobileBottomNav = document.getElementById('mobileNav');
+    const topHeader = document.getElementById('header');
+    const footer = document.getElementById('footer');
+    
+    let lastScrollTop = 0;
+    let isMobile = window.innerWidth <= 768;
+    let isAtTop = true;
+    
+    // Check screen size
+    function checkScreenSize() {
+      isMobile = window.innerWidth <= 768;
+      
+      if (!isMobile) {
+        // Desktop - always show top navbar, hide bottom navbar
+        topHeader.classList.remove('scrolled-down');
+        topHeader.classList.add('scrolled-up');
+        mobileBottomNav.classList.remove('active');
+        mobileBottomNav.classList.add('hidden');
+      } else {
+        // Mobile - initial state: show top navbar, hide bottom navbar
+        topHeader.classList.remove('scrolled-down');
+        topHeader.classList.add('scrolled-up');
+        mobileBottomNav.classList.remove('active');
+        mobileBottomNav.classList.add('hidden');
+      }
+    }
+    
+    // Handle scroll behavior - SIMPLIFIED
+    function handleScroll() {
+      if (!isMobile) return;
+      
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      const windowHeight = window.innerHeight;
+      const footerTop = footer.offsetTop;
+      
+      // Check if we're near the top
+      isAtTop = scrollTop < 50;
+      
+      // Check if user is near the footer
+      const isNearFooter = scrollTop + windowHeight >= footerTop - 100;
+      
+      if (isNearFooter) {
+        // Near footer - hide bottom navbar
+        mobileBottomNav.classList.remove('active');
+        mobileBottomNav.classList.add('hidden');
+      } else {
+        // Not near footer
+        if (scrollTop > lastScrollTop) {
+          // SCROLLING DOWN - hide top, show bottom
+          topHeader.classList.remove('scrolled-up');
+          topHeader.classList.add('scrolled-down');
+          mobileBottomNav.classList.remove('hidden');
+          mobileBottomNav.classList.add('active');
+        } else {
+          // SCROLLING UP
+          if (scrollTop > 50) {
+            // Not at top - hide top, show bottom (when scrolling up from anywhere)
+            topHeader.classList.remove('scrolled-up');
+            topHeader.classList.add('scrolled-down');
+            mobileBottomNav.classList.remove('hidden');
+            mobileBottomNav.classList.add('active');
+          } else {
+            // At top - show top, hide bottom
+            topHeader.classList.remove('scrolled-down');
+            topHeader.classList.add('scrolled-up');
+            mobileBottomNav.classList.remove('active');
+            mobileBottomNav.classList.add('hidden');
+          }
+        }
+      }
+      
+      lastScrollTop = scrollTop;
+    }
+    
+    // Initial setup
+    checkScreenSize();
+    
+    // Check on scroll
+    window.addEventListener('scroll', handleScroll);
+    
+    // Check on resize
+    window.addEventListener('resize', checkScreenSize);
+    
+    // Smooth scroll for mobile nav items
+    mobileNavItems.forEach(item => {
+      item.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          // Update active state
+          mobileNavItems.forEach(i => i.classList.remove('active'));
+          this.classList.add('active');
+          
+          // Show top navbar temporarily when clicking nav items
+          if (isMobile) {
+            topHeader.classList.remove('scrolled-down');
+            topHeader.classList.add('scrolled-up');
+            mobileBottomNav.classList.remove('active');
+            mobileBottomNav.classList.add('hidden');
+          }
+          
+          // Smooth scroll
+          window.scrollTo({
+            top: targetElement.offsetTop - 20,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+    
+    // Update active nav item on scroll
+    window.addEventListener('scroll', function() {
+      if (isMobile) {
+        const sections = document.querySelectorAll('section, #hero, #about, #services, #journal, #reviews, #get-in-touch');
+        let currentSection = '';
+        
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute('id') || 'hero';
+          }
+        });
+        
+        mobileNavItems.forEach(item => {
+          item.classList.remove('active');
+          const navTarget = item.getAttribute('href').substring(1);
+          if (navTarget === currentSection) {
+            item.classList.add('active');
+          }
+        });
+      }
+    });
+  });
   </script>
   
 </body>
